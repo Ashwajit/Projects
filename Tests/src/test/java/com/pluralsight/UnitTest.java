@@ -7,8 +7,9 @@ import org.junit.Test;
 public class UnitTest {
 
 	@Test
-	public void canGoToHomePage() {
+	public void canGoToHomePage() throws InterruptedException {
 		Pages.homepage().goTo();
+		Pages.homepage().goToRoleIQ();
 		Assert.assertTrue(Pages.homepage().isAt());
 	}
 
