@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.virginmoney;
 
 public class Pages {
 
@@ -8,6 +8,14 @@ public class Pages {
 
 	public static OneYrFRCEISA oneyrfrceisa() {
 		return new OneYrFRCEISA();
+	}
+
+	public static TwoYrFRCEISA twoyrfrceisa() {
+		return new TwoYrFRCEISA();
+	}
+
+	public static FiveYrFRCEISA fiveyrfrceisa() {
+		return new FiveYrFRCEISA();
 	}
 
 }
