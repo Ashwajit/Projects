@@ -1,21 +1,12 @@
 package com.pluralsight;
 
-import org.openqa.selenium.By;
+public class FasPage {
 
-public class HomePage {
-
-	static String url = "https://pluralsight.com";
-	static String title = "Pluralsight | Role IQ | Pluralsight";
+	static String url = "https://uk.virginmoney.com/savings/find/results/online";
+	static String title = "Savings Range | Virgin Money UK";
 
 	public void goTo() {
 		Browser.goTo(url);
-	}
-
-	public void goToRoleIQ() throws InterruptedException {
-
-		Browser.driver.findElement(By.xpath("//a[contains(text(),'Get your FREE Role IQ')]")).click();
-		Thread.sleep(2000);
-
 	}
 
 	public boolean isAt() {
