@@ -10,12 +10,16 @@
     <artifactId>TestFramework</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.10</version>
     <scope>test</scope>
 </dependency>
+
+
 
  </dependencies>
  

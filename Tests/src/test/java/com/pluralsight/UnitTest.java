@@ -1,31 +1,25 @@
 package com.pluralsight;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 
 public class UnitTest {
 
 	@Test
-	public void canGoToHomePage() throws InterruptedException {
-		Pages.homepage().goTo();
-		Pages.homepage().goToRoleIQ();
-		Assert.assertTrue(Pages.homepage().isAt());
+	public void canGoToFasPage() {
+		Pages.faspage().goTo();
+		Assert.assertTrue(Pages.faspage().isAt());
 	}
 
 	@Test
-	public void canGoToLoginPage() {
-		Pages.loginpage().goTo();
-		Assert.assertTrue(Pages.loginpage().isAt());
+	public void canGoTo1YrFRCEISAPage() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().isAt());
+
 	}
 
-	@Test
-	public void canGoToGetStarted() {
-		Pages.getstarted().goTo();
-		Assert.assertTrue(Pages.getstarted().isAt());
-	}
-
-	@After
+	@AfterMethod
 	public void cleanUp() {
 		Browser.close();
 	}
