@@ -19,13 +19,35 @@ public class Pages {
 	}
 
 	public static DoubleTakeEISA doubletakeeisa() {
-
 		return new DoubleTakeEISA();
 	}
 
 	public static ManUtdDoubleTakeEISA manutddoubletakeeisa() {
-
 		return new ManUtdDoubleTakeEISA();
+	}
+
+	public static HelpToBuy helptobuy() {
+		return new HelpToBuy();
+	}
+
+	public static SavingsToBuy savingstobuy() {
+		return new SavingsToBuy();
+	}
+
+	public static DoubleTakeESaver doubletakeesaver() {
+		return new DoubleTakeESaver();
+	}
+
+	public static ManUtdDoubleTakeESaver manutddoubletakeesaver() {
+		return new ManUtdDoubleTakeESaver();
+	}
+
+	public static OneYrFixedRateEBond oneyrfixedrateebond() {
+		return new OneYrFixedRateEBond();
+	}
+
+	public static FiveYrFixedRateEBond fiveyrfixedrateebond() {
+		return new FiveYrFixedRateEBond();
 	}
 
 }
