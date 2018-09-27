@@ -9,6 +9,7 @@ public class Browser {
 	public static void goTo(String url) {
 		System.setProperty("webdriver.chrome.driver", "C:/Appium/chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get(url);
 	}
 

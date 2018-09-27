@@ -18,4 +18,14 @@ public class Pages {
 		return new FiveYrFRCEISA();
 	}
 
+	public static DoubleTakeEISA doubletakeeisa() {
+
+		return new DoubleTakeEISA();
+	}
+
+	public static ManUtdDoubleTakeEISA manutddoubletakeeisa() {
+
+		return new ManUtdDoubleTakeEISA();
+	}
+
 }
