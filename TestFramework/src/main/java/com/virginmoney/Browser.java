@@ -9,6 +9,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import com.qa.util.TestUtil;
 
 public class Browser {
 
@@ -19,7 +22,7 @@ public class Browser {
 	public static void goTo(String url) throws IOException {
 
 		InputStream ip = new FileInputStream(
-				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\src\\main\\java\\com\\virginmoney\\config.properties");
+				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\src\\main\\java\\config\\properties");
 		prop.load(ip);
 		browserName = prop.getProperty("browser");
 
@@ -31,9 +34,14 @@ public class Browser {
 			driver = new FirefoxDriver();
 		}
 
+		else if (browserName.equalsIgnoreCase("Edge")) {
+			System.setProperty("webdriver.ie.driver", "C:/Appium/MicrosoftWebDriver.exe");
+			driver = new InternetExplorerDriver();
+		}
+
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICITLY_WAIT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(url);
 
