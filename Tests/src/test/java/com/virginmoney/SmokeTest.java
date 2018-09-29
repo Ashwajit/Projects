@@ -78,6 +78,7 @@ public class SmokeTest {
 
 	@Test
 	public void canGoToFiveYrFixedRateEBondPage() {
+
 		Pages.fiveyrfixedrateebond().goTo();
 		Assert.assertTrue(Pages.fiveyrfixedrateebond().isAt());
 	}
