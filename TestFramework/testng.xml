@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.virginmoney.FasTest"/>
+      <class name="com.virginmoney.SmokeTest"/>
+      <class name="com.virginmoney.OneYrFixedRateEBondTest"/>
+      <class name="com.virginmoney.TwoYrFixedRateCashEISATest2"/>
+      <class name="com.virginmoney.DoubleTakeESaverTest"/>
+      <class name="com.virginmoney.HelpToBuyTest"/>
+      <class name="com.virginmoney.ManUtdDoubleTakeEISATest"/>
+      <class name="com.virginmoney.FiveYrFixedRateCashEISATest"/>
+      <class name="com.virginmoney.FiveYrFixedRateEBondTest"/>
+      <class name="com.virginmoney.SavingsToBuyTest"/>
+      <class name="com.virginmoney.OneYrFixedRateCashEISATest"/>
+      <class name="com.virginmoney.DoubleTakeEISATest"/>
+      <class name="com.virginmoney.ManUtdDoubleTakeESaverTest"/>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.virginmoney.HelpToBuyTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.HelpToBuyTest -->
+      <class name="com.virginmoney.FasTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToFasPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.FasTest -->
+      <class name="com.virginmoney.SavingsToBuyTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.SavingsToBuyTest -->
+      <class name="com.virginmoney.ManUtdDoubleTakeEISATest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.ManUtdDoubleTakeEISATest -->
+      <class name="com.virginmoney.OneYrFixedRateCashEISATest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
+      <class name="com.virginmoney.OneYrFixedRateEBondTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.OneYrFixedRateEBondTest -->
+      <class name="com.virginmoney.DoubleTakeEISATest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.DoubleTakeEISATest -->
+      <class name="com.virginmoney.FiveYrFixedRateEBondTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.FiveYrFixedRateEBondTest -->
+      <class name="com.virginmoney.DoubleTakeESaverTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.DoubleTakeESaverTest -->
+      <class name="com.virginmoney.TwoYrFixedRateCashEISATest2">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.TwoYrFixedRateCashEISATest2 -->
+      <class name="com.virginmoney.SmokeTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.SmokeTest -->
+      <class name="com.virginmoney.FiveYrFixedRateCashEISATest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.FiveYrFixedRateCashEISATest -->
+      <class name="com.virginmoney.ManUtdDoubleTakeESaverTest">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.ManUtdDoubleTakeESaverTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
