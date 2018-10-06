@@ -18,7 +18,7 @@ public class VerifyLinks {
 
 		driver.manage().window().maximize();
 
-		driver.get("https://test1.uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/");
+		driver.get("https://staging.uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/");
 		// driver.get("https://uk.virginmoney.com/savings/find/results/online");
 		// driver.get("https://uk.virginmoney.com/savings/find/results/store-or-post");
 		// driver.get("https://test1.uk.virginmoney.com/savings/find/results/online");
