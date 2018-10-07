@@ -1,6 +1,7 @@
 package com.virginmoney;
 
 import java.io.IOException;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,9 @@ public class OneYrFRCEISA {
 	@FindBy(xpath = "//a[text()='ISA transfer service']")
 	WebElement isaTransferLink;
 
+	@FindBy(xpath = "//section[@id='apply-now']/div[1]/div/div[1]/p/a")
+	WebElement isaPdfLink;
+
 	public OneYrFRCEISA() {
 		PageFactory.initElements(Browser.driver, this);
 	}
@@ -30,6 +34,7 @@ public class OneYrFRCEISA {
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 	static String doubleTakeEISAtitle = "Double Take E-ISA | ISAs | Savings | Virgin Money UK";
 	static String isaTransferServicetitle = "The Virgin ISA Transfer Service | Savings | Virgin Money";
+	static String s = "isa_key_facts.pdf";
 
 	public void goTo() {
 		try {
@@ -59,5 +64,22 @@ public class OneYrFRCEISA {
 	public boolean validateIsaTransferLink() {
 		isaTransferLink.click();
 		return Browser.title().equals(isaTransferServicetitle);
+	}
+
+	public boolean validatePdfLink() throws InterruptedException {
+
+		isaPdfLink.click();
+		Thread.sleep(2000);
+		String parent = Browser.driver.getWindowHandle();
+		Set<String> allWindows = Browser.driver.getWindowHandles();
+
+		for (String child : allWindows) {
+			if (!parent.equalsIgnoreCase(child)) {
+				Browser.driver.switchTo().window(child);
+			}
+		}
+
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains(s);
 	}
 }

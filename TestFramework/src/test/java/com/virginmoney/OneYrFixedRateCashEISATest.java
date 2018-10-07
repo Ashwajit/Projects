@@ -42,6 +42,13 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("ISA Transfer link is clicked");
 	}
 
+	@Test
+	public void canValidatePdf() throws InterruptedException {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validatePdfLink());
+		System.out.println("ISA Key Facts Pdf link is clicked and pdf is opened");
+	}
+
 	@AfterMethod
 	public void cleanUp() {
 		Browser.close();
