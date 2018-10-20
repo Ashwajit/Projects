@@ -1,40 +1,43 @@
 package com.virginmoney;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Set;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.assertthat.selenium_shutterbug.core.Shutterbug;
+import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
+
 public class OneYrFRCEISA {
 
 	// OR
 
-	@FindBy(className = "headline-rate")
-	WebElement rateCard;
+	@FindBy(xpath = "//span[contains(text(),'1.51%')]")
+	WebElement interestRateOnCard;
 
-	@FindBy(xpath = "//div//div//div//div//h1[@class='vm-red']")
-	WebElement shortintro;
+	@FindBy(xpath = "//p[contains(text(),'Watch your money grow tax-free')]")
+	WebElement shortIntro;
 
-	@FindBy(xpath = "//a[text()='Double Take E-ISA']")
-	WebElement doubleTakeEISALink;
+	@FindBy(xpath = "//a[@class='btn btn-primary']")
+	WebElement applyButton;
 
-	@FindBy(xpath = "//a[text()='ISA transfer service']")
-	WebElement isaTransferLink;
-
-	@FindBy(xpath = "//section[@id='apply-now']/div[1]/div/div[1]/p/a")
+	@FindBy(xpath = "//div[@id='apply-box']//a[2]")
 	WebElement isaPdfLink;
 
 	public OneYrFRCEISA() {
 		PageFactory.initElements(Browser.driver, this);
 	}
 
-	static String url = "https://uk.virginmoney.com/savings/find/1_year_fixed_rate_cash_e_isa_issue_347/overview/";
+	static String url = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/";
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
-	static String doubleTakeEISAtitle = "Double Take E-ISA | ISAs | Savings | Virgin Money UK";
-	static String isaTransferServicetitle = "The Virgin ISA Transfer Service | Savings | Virgin Money";
 	static String s = "isa_key_facts.pdf";
+	static String shortIntroStrapline = "Watch your money grow tax-free";
 
 	public void goTo() {
 		try {
@@ -48,22 +51,25 @@ public class OneYrFRCEISA {
 		return Browser.title().equals(title);
 	}
 
-	public boolean rateLogo() {
-		return rateCard.isDisplayed();
+	public boolean validateInterestOnRateCard() {
+
+		String shh = interestRateOnCard.getText();
+		System.out.println(shh);
+		return interestRateOnCard.getText().contains("1.51%");
+
 	}
 
-	public boolean shortIntro() {
-		return shortintro.isDisplayed();
+	public boolean validateShortIntro() {
+		String sh = shortIntro.getText();
+		System.out.println(sh);
+		return shortIntro.getText().contains(shortIntroStrapline);
 	}
 
-	public boolean validateDoubleTakeEISALink() {
-		doubleTakeEISALink.click();
-		return Browser.title().equals(doubleTakeEISAtitle);
-	}
-
-	public boolean validateIsaTransferLink() {
-		isaTransferLink.click();
-		return Browser.title().equals(isaTransferServicetitle);
+	public boolean validateApplyButton() {
+		String test = applyButton.getText();
+		System.out.println(test);
+		applyButton.click();
+		return true;
 	}
 
 	public boolean validatePdfLink() throws InterruptedException {
@@ -78,8 +84,22 @@ public class OneYrFRCEISA {
 				Browser.driver.switchTo().window(child);
 			}
 		}
-
 		System.out.println(Browser.driver.getCurrentUrl());
 		return Browser.driver.getCurrentUrl().contains(s);
+	}
+
+	public boolean validateContent() throws IOException, InterruptedException {
+
+		// Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
+		// true)
+		// .withName("oneyrFixedRateCashEISAImage").save();
+		// Thread.sleep(3000);
+
+		File file = new File(
+				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\oneyrFixedRateCashEISAImage.png");
+		BufferedImage oneyrFixedRateCashEISAImage = ImageIO.read(file);
+		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
+				.equals(oneyrFixedRateCashEISAImage, 0.1);
+
 	}
 }

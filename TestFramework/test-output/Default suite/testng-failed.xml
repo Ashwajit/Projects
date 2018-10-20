@@ -5,8 +5,8 @@
     <classes>
       <class name="com.virginmoney.OneYrFixedRateCashEISATest">
         <methods>
+          <include name="canValidateRateCard"/>
           <include name="cleanUp"/>
-          <include name="canValidatePdf"/>
         </methods>
       </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
     </classes>

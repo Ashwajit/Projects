@@ -23,7 +23,7 @@ public class BrokenLinkTest {
 		// dynamic wait
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		// driver.get("https://uk.virginmoney.com/savings/find/1_year_fixed_rate_cash_e_isa_issue_347/overview/");
+		driver.get("https://uk.virginmoney.com/savings/products/2_year_fixed_rate_cash_e_isa_issue_348");
 		// driver.get("https://uk.virginmoney.com/savings/find/1_year_fixed_rate_cash_e_isa_issue_347/overview/");
 		// driver.get("https://uk.virginmoney.com/savings/find/2_year_fixed_rate_cash_e_isa_issue_348/overview/");
 		// driver.get("https://uk.virginmoney.com/savings/find/5_year_fixed_rate_cash_e_isa_issue_349/overview/");
@@ -33,7 +33,7 @@ public class BrokenLinkTest {
 		// driver.get("https://uk.virginmoney.com/savings/find/3_year_fixed_rate_cash_isa_issue_383/overview/");
 		// driver.get("https://uk.virginmoney.com/savings/find/virgin_easy_access_cash_isa_issue_25/overview/");
 		// driver.get("https://uk.virginmoney.com/savings/find/regular_saver_issue_13/overview/");
-		driver.get("https://www.google.co.uk");
+		// driver.get("https://preview.uk.virginmoney.com/savings/find/1_year_fixed_rate_cash_e_isa_issue_347/overview/");
 		// 1. get the list of all links and images
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		links.addAll(driver.findElements(By.tagName("img")));
@@ -47,6 +47,7 @@ public class BrokenLinkTest {
 			if (links.get(i).getAttribute("href") != null
 					&& (!links.get(i).getAttribute("href").contains("cardchecker"))
 					&& (!links.get(i).getAttribute("href").contains("javascript"))
+					&& (!links.get(i).getAttribute("href").contains("accessibility"))
 					&& (!links.get(i).getAttribute("href").contains("mailto"))) {
 				activelinks.add(links.get(i));
 			}

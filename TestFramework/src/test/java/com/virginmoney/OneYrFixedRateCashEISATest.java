@@ -1,52 +1,59 @@
 package com.virginmoney;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class OneYrFixedRateCashEISATest {
 
-	@Test
+	// Checking the Page exists or not -- by verifying the page title
+	@Test(priority = 1)
 	public void canGoTo1YrFRCEISAPage() {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().isAt(), "Title mismatched");
 		System.out.println("One Year Fixed Rate Page exists");
 	}
 
-	@Test
-	public void canValidateRateCard() {
-		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().rateLogo(),
-				"Rate card logo not displaying on 1 Year Fixed Rate Cash EISA");
-		System.out.println("Rate Card for 1 Year Fixed Rate is displaying");
-	}
-
-	@Test
+	// Verifying the shortIntro of the Page
+	@Test(priority = 2)
 	public void canValidateShortIntro() {
 		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().shortIntro(), "Short intro changed");
-		System.out.println("Short Intro is displaying");
+		Assert.assertTrue(Pages.oneyrfrceisa().validateShortIntro());
+		System.out.println("shortIntroStrapline is displying properly");
 	}
 
-	@Test
-	public void canValidateDoubleTakeEISALink() {
+	// Verifying Interest Rate on Card
+	@Test(priority = 3)
+	public void canValidateRateCard() {
 		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateDoubleTakeEISALink());
-		System.out.println("Double Take EISA link is clicked");
+		Assert.assertTrue(Pages.oneyrfrceisa().validateInterestOnRateCard());
+		System.out.println("Interest Rate displayed on Card is Correct");
 	}
 
-	@Test
-	public void canValidateIsaTransferLink() {
+	// Clicking on ApplyButton
+	@Test(priority = 4)
+	public void canValidateApplyButton() {
 		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateIsaTransferLink());
-		System.out.println("ISA Transfer link is clicked");
+		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyButton());
+		System.out.println("Apply Button on Rate Card is clicked");
 	}
 
-	@Test
+	// Opening the ISA key facts pdf and veriying it by url of the pdf
+	@Test(priority = 5)
 	public void canValidatePdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validatePdfLink());
 		System.out.println("ISA Key Facts Pdf link is clicked and pdf is opened");
+	}
+
+	// Checking the content of the page by comparing screenshot
+	@Test(priority = 6)
+	public void canValidateContent() throws IOException, InterruptedException {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());
+		System.out.println("Whole Page content is matching");
 	}
 
 	@AfterMethod
