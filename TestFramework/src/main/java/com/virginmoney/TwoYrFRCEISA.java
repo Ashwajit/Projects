@@ -102,6 +102,7 @@ public class TwoYrFRCEISA {
 		File file = new File(
 				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\twoyrFixedRateCashEISAImage.png");
 		BufferedImage twoyrFixedRateCashEISAImage = ImageIO.read(file);
+		Thread.sleep(1000);
 		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
 				.equals(twoyrFixedRateCashEISAImage, 0.1);
 
