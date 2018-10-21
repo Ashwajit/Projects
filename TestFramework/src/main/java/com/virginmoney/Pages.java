@@ -50,4 +50,8 @@ public class Pages {
 		return new FiveYrFixedRateEBond();
 	}
 
+	public static VirginAtlantic virginAtlantic() {
+		return new VirginAtlantic();
+	}
+
 }
