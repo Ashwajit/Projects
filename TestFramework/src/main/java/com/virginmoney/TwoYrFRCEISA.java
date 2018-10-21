@@ -1,7 +1,11 @@
 package com.virginmoney;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Set;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -90,23 +94,17 @@ public class TwoYrFRCEISA {
 
 	public boolean validateContent() throws IOException, InterruptedException {
 
-		Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true)
-				.withName("twoyrFixedRateCashEISAImage").save();
-		Thread.sleep(3000);
+		// Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
+		// true)
+		// .withName("twoyrFixedRateCashEISAImage").save();
+		// Thread.sleep(3000);
 
-		/*
-		 * 
-		 * File file = new File(
-		 * "C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\oneyrFixedRateCashEISAImage.png"
-		 * ); BufferedImage oneyrFixedRateCashEISAImage = ImageIO.read(file); return
-		 * Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
-		 * true).withName("Actual") .equals(oneyrFixedRateCashEISAImage, 0.1);
-		 *
-		 * 
-		 * 
-		 * 
-		 */
-		return true;
+		File file = new File(
+				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\twoyrFixedRateCashEISAImage.png");
+		BufferedImage twoyrFixedRateCashEISAImage = ImageIO.read(file);
+		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
+				.equals(twoyrFixedRateCashEISAImage, 0.1);
+
 	}
 
 }
