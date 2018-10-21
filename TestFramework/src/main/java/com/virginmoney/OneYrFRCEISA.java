@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
+import com.qa.util.TestUtil;
 
 public class OneYrFRCEISA {
 
@@ -34,14 +35,15 @@ public class OneYrFRCEISA {
 		PageFactory.initElements(Browser.driver, this);
 	}
 
-	static String url = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/";
+	// static String url =
+	// "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/";
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 	static String s = "isa_key_facts.pdf";
 	static String shortIntroStrapline = "Watch your money grow tax-free";
 
 	public void goTo() {
 		try {
-			Browser.goTo(url);
+			Browser.goTo(TestUtil.oneyr_frc_eisa_url);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
