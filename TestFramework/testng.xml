@@ -6,7 +6,7 @@
       <class name="com.virginmoney.FasTest"/>
       <class name="com.virginmoney.SmokeTest"/>
       <class name="com.virginmoney.OneYrFixedRateEBondTest"/>
-      <class name="com.virginmoney.TwoYrFixedRateCashEISATest2"/>
+      <class name="com.virginmoney.TwoYrFixedRateCashEISATest"/>
       <class name="com.virginmoney.DoubleTakeESaverTest"/>
       <class name="com.virginmoney.HelpToBuyTest"/>
       <class name="com.virginmoney.ManUtdDoubleTakeEISATest"/>

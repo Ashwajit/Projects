@@ -99,6 +99,7 @@ public class OneYrFRCEISA {
 		File file = new File(
 				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\oneyrFixedRateCashEISAImage.png");
 		BufferedImage oneyrFixedRateCashEISAImage = ImageIO.read(file);
+		Thread.sleep(1000);
 		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
 				.equals(oneyrFixedRateCashEISAImage, 0.1);
 
