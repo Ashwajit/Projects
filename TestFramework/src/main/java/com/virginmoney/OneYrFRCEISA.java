@@ -31,6 +31,12 @@ public class OneYrFRCEISA {
 	@FindBy(xpath = "//div[@id='apply-box']//a[2]")
 	WebElement isaPdfLink;
 
+	@FindBy(xpath = "//div[@id='apply-box']//a[3]")
+	WebElement tandCLink;
+
+	@FindBy(xpath = "//div[@id='apply-box']//a[4]")
+	WebElement fSCSLink;
+
 	public OneYrFRCEISA() {
 		PageFactory.initElements(Browser.driver, this);
 	}
@@ -38,7 +44,9 @@ public class OneYrFRCEISA {
 	// static String url =
 	// "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/";
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
-	static String s = "isa_key_facts.pdf";
+	static String isapdfurl = "isa_key_facts.pdf";
+	static String tcpdfurl = "uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
+	static String fscspdfurl = "uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
 	static String shortIntroStrapline = "Watch your money grow tax-free";
 
 	public void goTo() {
@@ -88,7 +96,7 @@ public class OneYrFRCEISA {
 			}
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
-		return Browser.driver.getCurrentUrl().contains(s);
+		return Browser.driver.getCurrentUrl().contains(isapdfurl);
 	}
 
 	public boolean validateContent() throws IOException, InterruptedException {
@@ -106,4 +114,38 @@ public class OneYrFRCEISA {
 				.equals(oneyrFixedRateCashEISAImage, 0.1);
 
 	}
+
+	public boolean validateTCPdf() throws InterruptedException {
+
+		tandCLink.click();
+		Thread.sleep(2000);
+		String parent = Browser.driver.getWindowHandle();
+		Set<String> allWindows = Browser.driver.getWindowHandles();
+
+		for (String child : allWindows) {
+			if (!parent.equalsIgnoreCase(child)) {
+				Browser.driver.switchTo().window(child);
+			}
+		}
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains(tcpdfurl);
+	}
+
+	public boolean validateFscsPdf() throws InterruptedException {
+
+		fSCSLink.click();
+		Thread.sleep(2000);
+		String parent = Browser.driver.getWindowHandle();
+		Set<String> allWindows = Browser.driver.getWindowHandles();
+
+		for (String child : allWindows) {
+			if (!parent.equalsIgnoreCase(child)) {
+				Browser.driver.switchTo().window(child);
+			}
+		}
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains(fscspdfurl);
+
+	}
+
 }

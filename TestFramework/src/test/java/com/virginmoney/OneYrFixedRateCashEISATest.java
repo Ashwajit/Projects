@@ -48,8 +48,24 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("ISA Key Facts Pdf link is clicked and pdf is opened");
 	}
 
-	// Checking the content of the page by comparing screenshot
+	// Opening the T&C pdf and veriying it by url of the pdf
 	@Test(priority = 6)
+	public void canValidateTCPdf() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateTCPdf());
+		System.out.println("T&C Pdf link is clicked and pdf is opened");
+	}
+
+	// Opening the FSCS pdf and veriying it by url of the pdf
+	@Test(priority = 7)
+	public void canValidateFscsPdf() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateFscsPdf());
+		System.out.println("FSCS Pdf link is clicked and pdf is opened");
+	}
+
+	// Checking the content of the page by comparing screenshot
+	@Test(priority = 8)
 	public void canValidateContent() throws IOException, InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());
