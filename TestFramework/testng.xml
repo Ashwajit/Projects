@@ -16,6 +16,7 @@
       <class name="com.virginmoney.OneYrFixedRateCashEISATest"/>
       <class name="com.virginmoney.DoubleTakeEISATest"/>
       <class name="com.virginmoney.ManUtdDoubleTakeESaverTest"/>
+      <class name="com.virginmoney.VirginAtlanticTest"/>
       </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

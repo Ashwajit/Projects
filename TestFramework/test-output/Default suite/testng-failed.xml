@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.virginmoney.OneYrFixedRateCashEISATest">
+      <class name="com.virginmoney.TwoYrFixedRateCashEISATest">
         <methods>
-          <include name="canValidateRateCard"/>
           <include name="cleanUp"/>
+          <include name="canValidateShortIntro"/>
         </methods>
-      </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
+      </class> <!-- com.virginmoney.TwoYrFixedRateCashEISATest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
