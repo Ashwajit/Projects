@@ -50,7 +50,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Opening the T&C pdf and veriying it by url of the pdf
 	@Test(priority = 6)
-	public void canValidateTCPdf() {
+	public void canValidateTCPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateTCPdf());
 		System.out.println("T&C Pdf link is clicked and pdf is opened");
@@ -58,7 +58,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Opening the FSCS pdf and veriying it by url of the pdf
 	@Test(priority = 7)
-	public void canValidateFscsPdf() {
+	public void canValidateFscsPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateFscsPdf());
 		System.out.println("FSCS Pdf link is clicked and pdf is opened");
@@ -68,6 +68,7 @@ public class OneYrFixedRateCashEISATest {
 	@Test(priority = 8)
 	public void canValidateContent() throws IOException, InterruptedException {
 		Pages.oneyrfrceisa().goTo();
+		Thread.sleep(1000);
 		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());
 		System.out.println("Whole Page content is matching");
 	}
