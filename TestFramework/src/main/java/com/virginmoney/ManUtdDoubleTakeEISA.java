@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ManUtdDoubleTakeEISA {
 
-	static String url = "https://uk.virginmoney.com/savings/products/man_utd_double_take_e_isa_issue_1/";
+	static String url = "https://uk.virginmoney.com/savings/products/man_utd_double_take_e_isa_issue_2";
 	static String title = "Man Utd Double Take E-ISA | ISAs | Savings | Virgin Money UK";
 
 	public void goTo() {
