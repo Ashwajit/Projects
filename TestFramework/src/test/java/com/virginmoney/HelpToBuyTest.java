@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class HelpToBuyTest {
 
 	@Test
-	public void canGoToHelpToBuyPage() {
+	public void canGoToHelpToBuyPage() throws InterruptedException {
 		Pages.helptobuy().goTo();
 		Assert.assertTrue(Pages.helptobuy().isAt());
 	}

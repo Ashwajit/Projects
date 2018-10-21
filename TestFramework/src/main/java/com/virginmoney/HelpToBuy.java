@@ -7,11 +7,11 @@ public class HelpToBuy {
 	static String url = "https://uk.virginmoney.com/savings/products/help_to_buy_isa/";
 	static String title = "Help to Buy: ISA | Savings | Virgin Money UK";
 
-	public void goTo() {
+	public void goTo() throws InterruptedException {
 		try {
 			Browser.goTo(url);
+			Thread.sleep(1000);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
