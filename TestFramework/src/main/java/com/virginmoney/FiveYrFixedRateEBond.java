@@ -11,7 +11,6 @@ public class FiveYrFixedRateEBond {
 		try {
 			Browser.goTo(url);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

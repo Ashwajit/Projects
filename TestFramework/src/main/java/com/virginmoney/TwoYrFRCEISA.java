@@ -43,7 +43,7 @@ public class TwoYrFRCEISA {
 
 	public void goTo() {
 		try {
-			Browser.goTo(TestUtil.twoyrfrceisa_url);
+			Browser.goTo(TestUtil.twoyr_frc_eisa_url);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
