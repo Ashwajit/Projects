@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class SavingsToBuyTest {
 
 	@Test
-	public void canGoToSavingsToBuyPage() throws IOException {
+	public void canGoToSavingsToBuyPage() throws IOException, InterruptedException {
 		Pages.savingstobuy().goTo();
 		Assert.assertTrue(Pages.savingstobuy().isAt());
 	}

@@ -34,7 +34,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Clicking on ApplyButton
 	@Test(priority = 4)
-	public void canValidateApplyButton() {
+	public void canValidateApplyButton() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyButton());
 		System.out.println("Apply Button on Rate Card is clicked");
