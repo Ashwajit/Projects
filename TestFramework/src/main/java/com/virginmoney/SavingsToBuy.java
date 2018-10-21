@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class SavingsToBuy {
 
-	static String url = "https://uk.virginmoney.com/savings/find/saving_to_buy_issue_7/overview/";
+	static String url = "https://uk.virginmoney.com/savings/products/saving_to_buy_issue_7/";
 	static String title = "Saving to Buy | Easy Access | Savings | Virgin Money UK";
 
 	public void goTo() {

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FiveYrFRCEISA {
 
-	static String url = "https://uk.virginmoney.com/savings/find/5_year_fixed_rate_cash_e_isa_issue_349/overview/";
+	static String url = "https://uk.virginmoney.com/savings/products/5_year_fixed_rate_cash_e_isa_issue_349/";
 	static String title = "5 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 
 	public void goTo() {

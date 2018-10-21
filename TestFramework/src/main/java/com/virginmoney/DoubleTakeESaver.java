@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class DoubleTakeESaver {
 
-	static String url = "https://uk.virginmoney.com/savings/find/double_take_e_saver_issue_7/overview/";
+	static String url = "https://uk.virginmoney.com/savings/double_take_e_saver_issue_7/";
 	static String title = "Double Take E-Saver | Limited | Savings | Virgin Money UK";
 
 	public void goTo() {
