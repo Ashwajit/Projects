@@ -60,8 +60,8 @@ public class OneYrFRCEISA {
 	}
 
 	public boolean validateShortIntro() {
-		String sh = shortIntro.getText();
-		System.out.println(sh);
+		// String sh = shortIntro.getText();
+		// System.out.println(sh);
 		return shortIntro.getText().contains(shortIntroStrapline);
 	}
 
