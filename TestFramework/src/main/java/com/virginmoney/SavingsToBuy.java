@@ -17,8 +17,8 @@ public class SavingsToBuy {
 
 	}
 
-	public boolean isAt() {
-
+	public boolean isAt() throws InterruptedException {
+		Thread.sleep(1000);
 		return Browser.title().equals(title);
 	}
 

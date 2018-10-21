@@ -65,10 +65,11 @@ public class OneYrFRCEISA {
 		return shortIntro.getText().contains(shortIntroStrapline);
 	}
 
-	public boolean validateApplyButton() {
+	public boolean validateApplyButton() throws InterruptedException {
 		String test = applyButton.getText();
 		System.out.println(test);
 		applyButton.click();
+		Thread.sleep(1000);
 		return true;
 	}
 
