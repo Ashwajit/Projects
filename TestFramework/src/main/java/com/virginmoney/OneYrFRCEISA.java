@@ -31,6 +31,9 @@ public class OneYrFRCEISA {
 	@FindBy(xpath = "//div[@id='apply-box']//a[2]")
 	WebElement isaPdfLink;
 
+	@FindBy(xpath = "//div[@id='apply-box']//p//a[1]")
+	WebElement summaryBoxLink;
+
 	@FindBy(xpath = "//div[@id='apply-box']//a[3]")
 	WebElement tandCLink;
 
@@ -47,6 +50,7 @@ public class OneYrFRCEISA {
 	static String isapdfurl = "isa_key_facts.pdf";
 	static String tcpdfurl = "uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
+	static String summaryboxprinturl = "uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/print";
 	static String shortIntroStrapline = "Watch your money grow tax-free";
 
 	public void goTo() {
@@ -146,6 +150,21 @@ public class OneYrFRCEISA {
 		System.out.println(Browser.driver.getCurrentUrl());
 		return Browser.driver.getCurrentUrl().contains(fscspdfurl);
 
+	}
+
+	public boolean validateSummaryBoxLink() throws InterruptedException {
+		summaryBoxLink.click();
+		Thread.sleep(2000);
+		String parent = Browser.driver.getWindowHandle();
+		Set<String> allWindows = Browser.driver.getWindowHandles();
+
+		for (String child : allWindows) {
+			if (!parent.equalsIgnoreCase(child)) {
+				Browser.driver.switchTo().window(child);
+			}
+		}
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains(summaryboxprinturl);
 	}
 
 }
