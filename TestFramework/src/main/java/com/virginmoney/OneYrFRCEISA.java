@@ -17,7 +17,7 @@ import com.qa.util.TestUtil;
 
 public class OneYrFRCEISA {
 
-	// OR
+	// Object Repository ---OR
 
 	@FindBy(xpath = "//span[contains(text(),'1.51%')]")
 	WebElement interestRateOnCard;
@@ -74,8 +74,8 @@ public class OneYrFRCEISA {
 	}
 
 	public boolean validateShortIntro() {
-		// String sh = shortIntro.getText();
-		// System.out.println(sh);
+		// String si = shortIntro.getText();
+		// System.out.println(si);
 		return shortIntro.getText().contains(shortIntroStrapline);
 	}
 

@@ -78,7 +78,7 @@ public class OneYrFixedRateCashEISATest {
 		Pages.oneyrfrceisa().goTo();
 		Thread.sleep(1000);
 		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());
-		System.out.println("Whole Page content is matching");
+		System.out.println("Page content is matching");
 	}
 
 	@AfterMethod
