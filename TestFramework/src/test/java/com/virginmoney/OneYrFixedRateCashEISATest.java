@@ -16,8 +16,17 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("One Year Fixed Rate Page exists");
 	}
 
-	// Verifying the shortIntro of the Page
+	// Verifying the Product Name
 	@Test(priority = 2)
+	public void canValidateProductName() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateProductName());
+		System.out.println("Product name is displying properly");
+	}
+
+	// Verifying the shortIntro of the Page
+
+	@Test(priority = 3)
 	public void canValidateShortIntro() {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateShortIntro());
@@ -25,7 +34,8 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Verifying Interest Rate on Card
-	@Test(priority = 3)
+
+	@Test(priority = 4)
 	public void canValidateRateCard() {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateInterestOnRateCard());
@@ -33,7 +43,8 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Clicking on ApplyButton
-	@Test(priority = 4)
+
+	@Test(priority = 5)
 	public void canValidateApplyButton() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyButton());
@@ -41,7 +52,8 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Opening the Summarybox pdf and veriying it by url of the pdf
-	@Test(priority = 5)
+
+	@Test(priority = 6)
 	public void canValidateSummaryBoxPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateSummaryBoxLink());
@@ -49,7 +61,8 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Opening the ISA key facts pdf and veriying it by url of the pdf
-	@Test(priority = 6)
+
+	@Test(priority = 7)
 	public void canValidatePdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validatePdfLink());
@@ -57,7 +70,8 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Opening the T&C pdf and veriying it by url of the pdf
-	@Test(priority = 7)
+
+	@Test(priority = 8)
 	public void canValidateTCPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateTCPdf());
@@ -65,16 +79,36 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// Opening the FSCS pdf and veriying it by url of the pdf
-	@Test(priority = 8)
+
+	@Test(priority = 9)
 	public void canValidateFscsPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateFscsPdf());
 		System.out.println("FSCS Pdf link is clicked and pdf is opened");
 	}
 
+	// verifying the FSCS Image
+	@Test(priority = 10)
+	public void canValidateFSCSImage() throws Exception {
+
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateFSCSImage());
+		System.out.println("FSCS Image Displayed");
+	}
+
+	// verifying the Help and Guide Image
+	@Test(priority = 11)
+	public void canValidateHelp_GuideImage() throws Exception {
+
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateHelpGuideImage());
+		System.out.println("Help and Guide Image Displayed");
+	}
+
 	// Checking the content of the page by comparing screenshot
-	@Test(priority = 9)
-	public void canValidateContent() throws IOException, InterruptedException {
+
+	@Test(priority = 12)
+	public void canValidateContent() throws InterruptedException, IOException {
 		Pages.oneyrfrceisa().goTo();
 		Thread.sleep(1000);
 		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());

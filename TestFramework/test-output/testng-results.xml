@@ -1,81 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106744" started-at="2018-10-22T09:58:58Z" finished-at="2018-10-22T10:00:45Z">
+  <suite name="Default suite" duration-ms="52706" started-at="2018-10-22T22:31:10Z" finished-at="2018-10-22T22:32:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106744" started-at="2018-10-22T09:58:58Z" finished-at="2018-10-22T10:00:45Z">
+    <test name="Default test" duration-ms="52706" started-at="2018-10-22T22:31:10Z" finished-at="2018-10-22T22:32:03Z">
       <class name="com.virginmoney.OneYrFixedRateCashEISATest">
-        <test-method status="PASS" signature="canGoTo1YrFRCEISAPage()[pri:1, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canGoTo1YrFRCEISAPage" duration-ms="7900" started-at="2018-10-22T10:58:59Z" finished-at="2018-10-22T10:59:06Z">
+        <test-method status="PASS" signature="canGoTo1YrFRCEISAPage()[pri:1, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="canGoTo1YrFRCEISAPage" duration-ms="14152" started-at="2018-10-22T23:31:10Z" finished-at="2018-10-22T23:31:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canGoTo1YrFRCEISAPage -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="669" started-at="2018-10-22T10:59:06Z" finished-at="2018-10-22T10:59:07Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="cleanUp" is-config="true" duration-ms="725" started-at="2018-10-22T23:31:24Z" finished-at="2018-10-22T23:31:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateShortIntro()[pri:2, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateShortIntro" duration-ms="6716" started-at="2018-10-22T10:59:07Z" finished-at="2018-10-22T10:59:14Z">
+        <test-method status="PASS" signature="canValidateProductName()[pri:2, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="canValidateProductName" duration-ms="8744" started-at="2018-10-22T23:31:25Z" finished-at="2018-10-22T23:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canValidateProductName -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="cleanUp" is-config="true" duration-ms="692" started-at="2018-10-22T23:31:34Z" finished-at="2018-10-22T23:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="canValidateShortIntro()[pri:3, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="canValidateShortIntro" duration-ms="9644" started-at="2018-10-22T23:31:34Z" finished-at="2018-10-22T23:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canValidateShortIntro -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="644" started-at="2018-10-22T10:59:14Z" finished-at="2018-10-22T10:59:14Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="cleanUp" is-config="true" duration-ms="691" started-at="2018-10-22T23:31:44Z" finished-at="2018-10-22T23:31:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateRateCard()[pri:3, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateRateCard" duration-ms="6616" started-at="2018-10-22T10:59:14Z" finished-at="2018-10-22T10:59:21Z">
+        <test-method status="PASS" signature="canValidateFSCSImage()[pri:4, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="canValidateFSCSImage" duration-ms="8597" started-at="2018-10-22T23:31:45Z" finished-at="2018-10-22T23:31:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- canValidateRateCard -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="680" started-at="2018-10-22T10:59:21Z" finished-at="2018-10-22T10:59:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateApplyButton()[pri:4, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateApplyButton" duration-ms="7763" started-at="2018-10-22T10:59:22Z" finished-at="2018-10-22T10:59:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canValidateApplyButton -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="654" started-at="2018-10-22T10:59:30Z" finished-at="2018-10-22T10:59:30Z">
+        </test-method> <!-- canValidateFSCSImage -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="cleanUp" is-config="true" duration-ms="680" started-at="2018-10-22T23:31:53Z" finished-at="2018-10-22T23:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateSummaryBoxPdf()[pri:5, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateSummaryBoxPdf" duration-ms="10101" started-at="2018-10-22T10:59:30Z" finished-at="2018-10-22T10:59:40Z">
+        <test-method status="PASS" signature="canValidateHelp_GuideImage()[pri:4, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="canValidateHelp_GuideImage" duration-ms="8023" started-at="2018-10-22T23:31:54Z" finished-at="2018-10-22T23:32:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- canValidateSummaryBoxPdf -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="757" started-at="2018-10-22T10:59:40Z" finished-at="2018-10-22T10:59:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidatePdf()[pri:6, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidatePdf" duration-ms="11144" started-at="2018-10-22T10:59:41Z" finished-at="2018-10-22T10:59:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canValidatePdf -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="682" started-at="2018-10-22T10:59:52Z" finished-at="2018-10-22T10:59:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateTCPdf()[pri:7, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateTCPdf" duration-ms="11024" started-at="2018-10-22T10:59:53Z" finished-at="2018-10-22T11:00:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canValidateTCPdf -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="688" started-at="2018-10-22T11:00:04Z" finished-at="2018-10-22T11:00:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateFscsPdf()[pri:8, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateFscsPdf" duration-ms="10003" started-at="2018-10-22T11:00:05Z" finished-at="2018-10-22T11:00:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canValidateFscsPdf -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="688" started-at="2018-10-22T11:00:15Z" finished-at="2018-10-22T11:00:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="canValidateContent()[pri:9, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="canValidateContent" duration-ms="29334" started-at="2018-10-22T11:00:15Z" finished-at="2018-10-22T11:00:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- canValidateContent -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@4f933fd1]" name="cleanUp" is-config="true" duration-ms="636" started-at="2018-10-22T11:00:45Z" finished-at="2018-10-22T11:00:45Z">
+        </test-method> <!-- canValidateHelp_GuideImage -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.virginmoney.OneYrFixedRateCashEISATest@d2cc05a]" name="cleanUp" is-config="true" duration-ms="676" started-at="2018-10-22T23:32:02Z" finished-at="2018-10-22T23:32:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

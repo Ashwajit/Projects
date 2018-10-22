@@ -7,6 +7,7 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,18 +41,24 @@ public class OneYrFRCEISA {
 	@FindBy(xpath = "//div[@id='apply-box']//a[4]")
 	WebElement fSCSLink;
 
+	@FindBy(xpath = "//h1[@class='h1 display-2']")
+	WebElement productName;
+
+	@FindBy(xpath = "//img[@class='fscs-sme']")
+	WebElement fscsImage;
+
+	@FindBy(xpath = "//img[@src='/virgin/assets/img/product_help_guides.jpg']")
+	WebElement help_GuideImage;
+
 	public OneYrFRCEISA() {
 		PageFactory.initElements(Browser.driver, this);
 	}
 
-	// static String url =
-	// "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/";
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 	static String isapdfurl = "isa_key_facts.pdf";
 	static String tcpdfurl = "uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
 	static String summaryboxprinturl = "uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/print";
-	static String shortIntroStrapline = "Watch your money grow tax-free";
 
 	public void goTo() {
 		try {
@@ -65,6 +72,20 @@ public class OneYrFRCEISA {
 		return Browser.title().equals(title);
 	}
 
+	public boolean validateProductName() {
+		String prodName = productName.getText();
+		System.out.println(prodName);
+		return productName.getText().contains("1 Year Fixed Rate Cash E");
+
+	}
+
+	public boolean validateFSCSImage() {
+
+		return (Boolean) ((JavascriptExecutor) Browser.driver).executeScript(
+				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				fscsImage);
+	}
+
 	public boolean validateInterestOnRateCard() {
 
 		String shh = interestRateOnCard.getText();
@@ -76,7 +97,7 @@ public class OneYrFRCEISA {
 	public boolean validateShortIntro() {
 		// String si = shortIntro.getText();
 		// System.out.println(si);
-		return shortIntro.getText().contains(shortIntroStrapline);
+		return shortIntro.getText().contains("Watch your money grow tax-free");
 	}
 
 	public boolean validateApplyButton() throws InterruptedException {
@@ -165,6 +186,12 @@ public class OneYrFRCEISA {
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
 		return Browser.driver.getCurrentUrl().contains(summaryboxprinturl);
+	}
+
+	public boolean validateHelpGuideImage() {
+		return (Boolean) ((JavascriptExecutor) Browser.driver).executeScript(
+				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				help_GuideImage);
 	}
 
 }

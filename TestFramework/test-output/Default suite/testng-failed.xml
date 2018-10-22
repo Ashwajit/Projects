@@ -5,7 +5,7 @@
     <classes>
       <class name="com.virginmoney.OneYrFixedRateCashEISATest">
         <methods>
-          <include name="canValidateSummaryBoxPdf"/>
+          <include name="canValidateProductName"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
