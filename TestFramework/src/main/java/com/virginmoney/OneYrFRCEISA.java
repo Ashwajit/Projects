@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
-import com.qa.util.TestUti;
+import com.qa.util.TestUtil;
 
 public class OneYrFRCEISA {
 
@@ -62,7 +62,7 @@ public class OneYrFRCEISA {
 
 	public void goTo() {
 		try {
-			Browser.goTo(TestUti.oneyr_frc_eisa_url);
+			Browser.goTo(TestUtil.oneyr_frc_eisa_url);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
