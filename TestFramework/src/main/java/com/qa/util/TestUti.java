@@ -1,6 +1,6 @@
 package com.qa.util;
 
-public class TestUtil {
+public class TestUti {
 
 	public static long PAGE_LOAD_TIMEOUT = 25;
 	public static long IMPLICITLY_WAIT = 20;

@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import com.qa.util.TestUtil;
+import com.qa.util.TestUti;
 
 public class Browser {
 
@@ -40,8 +40,8 @@ public class Browser {
 		}
 
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICITLY_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUti.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TestUti.IMPLICITLY_WAIT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(url);
 

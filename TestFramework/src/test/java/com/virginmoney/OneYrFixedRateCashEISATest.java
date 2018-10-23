@@ -118,6 +118,7 @@ public class OneYrFixedRateCashEISATest {
 	@AfterMethod
 	public void cleanUp() {
 		Browser.close();
+
 	}
 
 }
