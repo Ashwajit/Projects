@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8303" started-at="2018-10-03T09:58:24Z" finished-at="2018-10-03T09:58:32Z">
+  <suite name="Default suite" duration-ms="8409" started-at="2018-10-23T21:35:50Z" finished-at="2018-10-23T21:35:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8303" started-at="2018-10-03T09:58:24Z" finished-at="2018-10-03T09:58:32Z">
+    <test name="Default test" duration-ms="8409" started-at="2018-10-23T21:35:50Z" finished-at="2018-10-23T21:35:59Z">
       <class name="com.NotePadTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.NotePadTest@7f9a81e8]" name="init" is-config="true" duration-ms="5710" started-at="2018-10-03T10:58:24Z" finished-at="2018-10-03T10:58:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.NotePadTest@7f9a81e8]" name="init" is-config="true" duration-ms="5771" started-at="2018-10-23T22:35:50Z" finished-at="2018-10-23T22:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testNotePad()[pri:0, instance:com.NotePadTest@7f9a81e8]" name="testNotePad" duration-ms="2552" started-at="2018-10-03T10:58:29Z" finished-at="2018-10-03T10:58:32Z">
+        <test-method status="PASS" signature="testNotePad()[pri:0, instance:com.NotePadTest@7f9a81e8]" name="testNotePad" duration-ms="2593" started-at="2018-10-23T22:35:56Z" finished-at="2018-10-23T22:35:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNotePad -->
