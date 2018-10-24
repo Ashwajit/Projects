@@ -16,44 +16,9 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("One Year Fixed Rate Page exists");
 	}
 
-	// Verifying the Product Name
-	@Test(priority = 2)
-	public void canValidateProductName() {
-		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateProductName());
-		System.out.println("Product name is displying properly");
-	}
-
-	// Verifying the shortIntro of the Page
-
-	@Test(priority = 3)
-	public void canValidateShortIntro() {
-		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateShortIntro());
-		System.out.println("shortIntroStrapline is displying properly");
-	}
-
-	// Verifying Interest Rate on Card
-
-	@Test(priority = 4)
-	public void canValidateRateCard() {
-		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateInterestOnRateCard());
-		System.out.println("Interest Rate displayed on Card is Correct");
-	}
-
-	// Clicking on ApplyButton
-
-	@Test(priority = 5)
-	public void canValidateApplyButton() throws InterruptedException {
-		Pages.oneyrfrceisa().goTo();
-		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyButton());
-		System.out.println("Apply Button on Rate Card is clicked");
-	}
-
 	// Opening the Summarybox pdf and veriying it by url of the pdf
 
-	@Test(priority = 6)
+	@Test(priority = 2)
 	public void canValidateSummaryBoxPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateSummaryBoxLink());
@@ -62,7 +27,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Opening the ISA key facts pdf and veriying it by url of the pdf
 
-	@Test(priority = 7)
+	@Test(priority = 3)
 	public void canValidatePdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validatePdfLink());
@@ -71,7 +36,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Opening the T&C pdf and veriying it by url of the pdf
 
-	@Test(priority = 8)
+	@Test(priority = 4)
 	public void canValidateTCPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateTCPdf());
@@ -80,7 +45,7 @@ public class OneYrFixedRateCashEISATest {
 
 	// Opening the FSCS pdf and veriying it by url of the pdf
 
-	@Test(priority = 9)
+	@Test(priority = 5)
 	public void canValidateFscsPdf() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateFscsPdf());
@@ -88,7 +53,7 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// verifying the FSCS Image
-	@Test(priority = 10)
+	@Test(priority = 6)
 	public void canValidateFSCSImage() throws Exception {
 
 		Pages.oneyrfrceisa().goTo();
@@ -97,7 +62,7 @@ public class OneYrFixedRateCashEISATest {
 	}
 
 	// verifying the Help and Guide Image
-	@Test(priority = 11)
+	@Test(priority = 7)
 	public void canValidateHelp_GuideImage() throws Exception {
 
 		Pages.oneyrfrceisa().goTo();
@@ -105,14 +70,77 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Help and Guide Image Displayed");
 	}
 
+	// clicking the Apply now button for ETS2 check
+	@Test(priority = 8)
+	public void canValidateApplyNow() throws InterruptedException {
+
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyNow());
+		System.out.println("Apply now button is clicked and ETS2 page is opened");
+	}
+
+	@Test(priority = 9)
+	public void canValidateReadSummaryBoxLink() throws InterruptedException {
+
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateReadSummaryBoxLink());
+		System.out.println(
+				"Clicked on Please read the summary box link on Rate card and now all 8 accordions are clicked");
+
+	}
+
+	// clicking the Apply now button for ETS2 check
+	@Test(priority = 10)
+	public void canValidateSignInAndApply() throws InterruptedException {
+
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateSignInAndApply());
+		System.out.println("SignIn and Apply button is clicked and ETS2 page is opened");
+	}
+
 	// Checking the content of the page by comparing screenshot
 
-	@Test(priority = 12)
+	@Test(priority = 11)
 	public void canValidateContent() throws InterruptedException, IOException {
 		Pages.oneyrfrceisa().goTo();
 		Thread.sleep(1000);
 		Assert.assertTrue(Pages.oneyrfrceisa().validateContent());
 		System.out.println("Page content is matching");
+	}
+
+	// Clicking the ApplyButton on Rate card
+
+	@Test(priority = 12)
+	public void canValidateApplyButton() throws InterruptedException {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateApplyButton());
+		System.out.println("Apply Button on Rate Card is clicked");
+	}
+
+	// Verifying Interest Rate on Card
+
+	@Test(priority = 13)
+	public void canValidateRateCard() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateInterestOnRateCard());
+		System.out.println("Interest Rate displayed on Card is Correct");
+	}
+
+	// Verifying the shortIntro of the Page
+
+	@Test(priority = 14)
+	public void canValidateShortIntro() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateShortIntro());
+		System.out.println("shortIntroStrapline is displying properly");
+	}
+
+	// Verifying the Product Name
+	@Test(priority = 15)
+	public void canValidateProductName() {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validateProductName());
+		System.out.println("Product name is displying properly");
 	}
 
 	@AfterMethod

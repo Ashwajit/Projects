@@ -50,15 +50,52 @@ public class OneYrFRCEISA {
 	@FindBy(xpath = "//img[@src='/virgin/assets/img/product_help_guides.jpg']")
 	WebElement help_GuideImage;
 
+	@FindBy(xpath = "//a[contains(text(),'Apply online')]")
+	WebElement applyOnlineButton;
+
+	@FindBy(xpath = "//a[contains(text(),'Sign in and apply')]")
+	WebElement signInAndApplyButton;
+
+	@FindBy(xpath = "//a[@class='btn btn-link product-info__summary-link']")
+	WebElement readTheSummaryBoxLink;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-1-title']")
+	WebElement accordion_one;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-2-title']")
+	WebElement accordion_two;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-3-title']")
+	WebElement accordion_three;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-4-title']")
+	WebElement accordion_four;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-5-title']")
+	WebElement accordion_five;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-6-title']")
+	WebElement accordion_six;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-7-title']")
+	WebElement accordion_seven;
+
+	@FindBy(xpath = "//div[@id='accordion-tab-1-8-title']")
+	WebElement accordion_eight;
+
 	public OneYrFRCEISA() {
 		PageFactory.initElements(Browser.driver, this);
 	}
 
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
+	// static String applyonlineurl =
+	// "https://online.virginmoney.com/SSO/SSO/PersonalDetailsView.jsf";
+	// static String signinandapplyurl =
+	// "https://online.virginmoney.com/SSO/SSO/CustomerIdView.jsf";
 	static String isapdfurl = "isa_key_facts.pdf";
 	static String tcpdfurl = "uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	static String summaryboxprinturl = "uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_347/print";
+	static String summaryboxprinturl = "uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
 
 	public void goTo() {
 		try {
@@ -192,6 +229,47 @@ public class OneYrFRCEISA {
 		return (Boolean) ((JavascriptExecutor) Browser.driver).executeScript(
 				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
 				help_GuideImage);
+	}
+
+	public boolean validateApplyNow() throws InterruptedException {
+
+		applyOnlineButton.click();
+		Thread.sleep(3000);
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl()
+				.contains("https://online.virginmoney.com/SSO/SSO/PersonalDetailsView.jsf");
+
+	}
+
+	public boolean validateSignInAndApply() throws InterruptedException {
+		signInAndApplyButton.click();
+		Thread.sleep(3000);
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains("https://online.virginmoney.com/SSO/SSO/CustomerIdView.jsf");
+
+	}
+
+	public boolean validateReadSummaryBoxLink() throws InterruptedException {
+
+		readTheSummaryBoxLink.click();
+		Thread.sleep(2000);
+		accordion_one.click();
+		Thread.sleep(1000);
+		accordion_two.click();
+		Thread.sleep(1000);
+		accordion_three.click();
+		Thread.sleep(1000);
+		accordion_four.click();
+		Thread.sleep(1000);
+		accordion_five.click();
+		Thread.sleep(1000);
+		accordion_six.click();
+		Thread.sleep(1000);
+		accordion_seven.click();
+		Thread.sleep(1000);
+		accordion_eight.click();
+		Thread.sleep(1000);
+		return readTheSummaryBoxLink.isEnabled();
 	}
 
 }
