@@ -16,7 +16,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("One Year Fixed Rate Page exists");
 	}
 
-	// Opening the Summarybox pdf and veriying it by url of the pdf
+	// Opening the Summarybox pdf and veriying the pdf by its url
 
 	@Test(priority = 2)
 	public void canValidateSummaryBoxPdf() throws InterruptedException {
@@ -25,7 +25,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Summary Box Print link is clicked and its opened");
 	}
 
-	// Opening the ISA key facts pdf and veriying it by url of the pdf
+	// Clicking the ISA key facts pdf and veriying the ISA Pdf by its url
 
 	@Test(priority = 3)
 	public void canValidatePdf() throws InterruptedException {
@@ -34,7 +34,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("ISA Key Facts Pdf link is clicked and pdf is opened");
 	}
 
-	// Opening the T&C pdf and veriying it by url of the pdf
+	// Opening the T&C pdf and veriying it by url of the T&C pdf
 
 	@Test(priority = 4)
 	public void canValidateTCPdf() throws InterruptedException {
@@ -43,7 +43,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("T&C Pdf link is clicked and pdf is opened");
 	}
 
-	// Opening the FSCS pdf and veriying it by url of the pdf
+	// Opening the FSCS pdf and veriying it by url of the Fscs pdf
 
 	@Test(priority = 5)
 	public void canValidateFscsPdf() throws InterruptedException {
@@ -61,7 +61,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("FSCS Image Displayed");
 	}
 
-	// verifying the Help and Guide Image
+	// verifying the Help and Guide Image at the bottom of the page
 	@Test(priority = 7)
 	public void canValidateHelp_GuideImage() throws Exception {
 
@@ -70,7 +70,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Help and Guide Image Displayed");
 	}
 
-	// clicking the Apply now button for ETS2 check
+	// clicking the Apply now button and its taking the user to ETS2
 	@Test(priority = 8)
 	public void canValidateApplyNow() throws InterruptedException {
 
@@ -79,6 +79,8 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Apply now button is clicked and ETS2 page is opened");
 	}
 
+	// Verifying Read the Summarybox on Ratecard and then verifying all the 8
+	// accordions
 	@Test(priority = 9)
 	public void canValidateReadSummaryBoxLink() throws InterruptedException {
 
@@ -89,7 +91,7 @@ public class OneYrFixedRateCashEISATest {
 
 	}
 
-	// clicking the Apply now button for ETS2 check
+	// clicking the Sign in and apply button for ETS2
 	@Test(priority = 10)
 	public void canValidateSignInAndApply() throws InterruptedException {
 
@@ -98,7 +100,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("SignIn and Apply button is clicked and ETS2 page is opened");
 	}
 
-	// Checking the content of the page by comparing screenshot
+	// Checking the content of the page by comparing the stored screenshot
 
 	@Test(priority = 11)
 	public void canValidateContent() throws InterruptedException, IOException {
@@ -108,7 +110,7 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Page content is matching");
 	}
 
-	// Clicking the ApplyButton on Rate card
+	// Clicking the ApplyButton on Rate card and its taking the user to CTA
 
 	@Test(priority = 12)
 	public void canValidateApplyButton() throws InterruptedException {
