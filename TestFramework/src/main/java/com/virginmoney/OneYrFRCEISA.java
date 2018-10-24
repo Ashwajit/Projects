@@ -141,7 +141,7 @@ public class OneYrFRCEISA {
 		String test = applyButton.getText();
 		System.out.println(test);
 		applyButton.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		return true;
 	}
 
