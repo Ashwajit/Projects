@@ -25,31 +25,32 @@ public class OneYrFixedRateCashEISATest {
 		System.out.println("Summary Box Print link is clicked and its opened");
 	}
 
-	// Clicking the ISA key facts pdf and veriying the ISA Pdf by its url
+	// Clicking the ISA key facts pdf and verifying the Pdf by its url and asset
+	// number
 
 	@Test(priority = 3)
-	public void canValidatePdf() throws InterruptedException {
+	public void canValidatePdf() throws InterruptedException, IOException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validatePdfLink());
-		System.out.println("ISA Key Facts Pdf link is clicked and pdf is opened");
+		System.out.println("ISA Key Facts Pdf link is clicked and pdf assest number is verified");
 	}
 
 	// Opening the T&C pdf and veriying it by url of the T&C pdf
 
 	@Test(priority = 4)
-	public void canValidateTCPdf() throws InterruptedException {
+	public void canValidateTCPdf() throws InterruptedException, IOException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateTCPdf());
-		System.out.println("T&C Pdf link is clicked and pdf is opened");
+		System.out.println("T&C Pdf link is clicked and pdf assest number is verified");
 	}
 
-	// Opening the FSCS pdf and veriying it by url of the Fscs pdf
+	// Opening the FSCS pdf and veriying the pdf by its url and asset number
 
 	@Test(priority = 5)
-	public void canValidateFscsPdf() throws InterruptedException {
+	public void canValidateFscsPdf() throws InterruptedException, IOException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateFscsPdf());
-		System.out.println("FSCS Pdf link is clicked and pdf is opened");
+		System.out.println("FSCS Pdf link is clicked and pdf assest number is verified");
 	}
 
 	// verifying the FSCS Image
@@ -143,6 +144,14 @@ public class OneYrFixedRateCashEISATest {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validateProductName());
 		System.out.println("Product name is displying properly");
+	}
+
+	// Verifying the Product Name
+	@Test(priority = 16)
+	public void canValidatePrintSummaryBox() throws InterruptedException {
+		Pages.oneyrfrceisa().goTo();
+		Assert.assertTrue(Pages.oneyrfrceisa().validatePrintSummaryBox());
+		System.out.println("Print Summary Box button is clicked and verified");
 	}
 
 	@AfterMethod

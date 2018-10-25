@@ -1,16 +1,22 @@
 package com.virginmoney;
 
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.Set;
 
 import javax.imageio.ImageIO;
 
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
@@ -34,6 +40,9 @@ public class OneYrFRCEISA {
 
 	@FindBy(xpath = "//div[@id='apply-box']//p//a[1]")
 	WebElement summaryBoxLink;
+
+	@FindBy(xpath = "//a[@class='btn btn-tertiary']")
+	WebElement printSummaryBoxButton;
 
 	@FindBy(xpath = "//div[@id='apply-box']//a[3]")
 	WebElement tandCLink;
@@ -88,14 +97,13 @@ public class OneYrFRCEISA {
 	}
 
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
-	// static String applyonlineurl =
-	// "https://online.virginmoney.com/SSO/SSO/PersonalDetailsView.jsf";
-	// static String signinandapplyurl =
-	// "https://online.virginmoney.com/SSO/SSO/CustomerIdView.jsf";
-	static String isapdfurl = "isa_key_facts.pdf";
-	static String tcpdfurl = "uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
-	static String fscspdfurl = "uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	static String summaryboxprinturl = "uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
+	static String isapdfurl = "https://uk.virginmoney.com/virgin/downloads/isa_key_facts.pdf";
+	// static String printsummaryboxurl =
+	// "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
+	static String tcpdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
+	static String fscspdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
+	// printurl is used for both summarybox and print summary box
+	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
 
 	public void goTo() {
 		try {
@@ -132,8 +140,6 @@ public class OneYrFRCEISA {
 	}
 
 	public boolean validateShortIntro() {
-		// String si = shortIntro.getText();
-		// System.out.println(si);
 		return shortIntro.getText().contains("Watch your money grow tax-free");
 	}
 
@@ -145,7 +151,7 @@ public class OneYrFRCEISA {
 		return true;
 	}
 
-	public boolean validatePdfLink() throws InterruptedException {
+	public boolean validatePdfLink() throws InterruptedException, IOException {
 
 		isaPdfLink.click();
 		Thread.sleep(2000);
@@ -158,7 +164,17 @@ public class OneYrFRCEISA {
 			}
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
-		return Browser.driver.getCurrentUrl().contains(isapdfurl);
+		Browser.driver.getCurrentUrl().contains(isapdfurl);
+		URL url = new URL(isapdfurl);
+		InputStream is = url.openStream();
+		BufferedInputStream fileParse = new BufferedInputStream(is);
+		PDDocument document = null;
+		document = PDDocument.load(fileParse);
+		String pdfContent = new PDFTextStripper().getText(document);
+		// System.out.println(pdfContent);
+		Assert.assertTrue(pdfContent.contains("VM19765V12"));
+		return true;
+
 	}
 
 	public boolean validateContent() throws IOException, InterruptedException {
@@ -177,7 +193,7 @@ public class OneYrFRCEISA {
 
 	}
 
-	public boolean validateTCPdf() throws InterruptedException {
+	public boolean validateTCPdf() throws InterruptedException, IOException {
 
 		tandCLink.click();
 		Thread.sleep(2000);
@@ -190,10 +206,19 @@ public class OneYrFRCEISA {
 			}
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
-		return Browser.driver.getCurrentUrl().contains(tcpdfurl);
+		Browser.driver.getCurrentUrl().contains(tcpdfurl);
+		URL url = new URL(tcpdfurl);
+		InputStream is = url.openStream();
+		BufferedInputStream fileParse = new BufferedInputStream(is);
+		PDDocument document = null;
+		document = PDDocument.load(fileParse);
+		String pdfContent = new PDFTextStripper().getText(document);
+		// System.out.println(pdfContent);
+		Assert.assertTrue(pdfContent.contains("VMP69V13"));
+		return true;
 	}
 
-	public boolean validateFscsPdf() throws InterruptedException {
+	public boolean validateFscsPdf() throws InterruptedException, IOException {
 
 		fSCSLink.click();
 		Thread.sleep(2000);
@@ -206,7 +231,16 @@ public class OneYrFRCEISA {
 			}
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
-		return Browser.driver.getCurrentUrl().contains(fscspdfurl);
+		Browser.driver.getCurrentUrl().contains(fscspdfurl);
+		URL url = new URL(fscspdfurl);
+		InputStream is = url.openStream();
+		BufferedInputStream fileParse = new BufferedInputStream(is);
+		PDDocument document = null;
+		document = PDDocument.load(fileParse);
+		String pdfContent = new PDFTextStripper().getText(document);
+		// System.out.println(pdfContent);
+		Assert.assertTrue(pdfContent.contains("VM8456V7"));
+		return true;
 
 	}
 
@@ -222,7 +256,7 @@ public class OneYrFRCEISA {
 			}
 		}
 		System.out.println(Browser.driver.getCurrentUrl());
-		return Browser.driver.getCurrentUrl().contains(summaryboxprinturl);
+		return Browser.driver.getCurrentUrl().contains(summaryboxurl);
 	}
 
 	public boolean validateHelpGuideImage() {
@@ -270,6 +304,24 @@ public class OneYrFRCEISA {
 		accordion_eight.click();
 		Thread.sleep(1000);
 		return readTheSummaryBoxLink.isEnabled();
+	}
+
+	public boolean validatePrintSummaryBox() throws InterruptedException {
+		readTheSummaryBoxLink.click();
+		Thread.sleep(2000);
+		printSummaryBoxButton.click();
+		Thread.sleep(2000);
+		String parent = Browser.driver.getWindowHandle();
+		Set<String> allWindows = Browser.driver.getWindowHandles();
+
+		for (String child : allWindows) {
+			if (!parent.equalsIgnoreCase(child)) {
+				Browser.driver.switchTo().window(child);
+			}
+		}
+		System.out.println(Browser.driver.getCurrentUrl());
+		return Browser.driver.getCurrentUrl().contains(summaryboxurl);
+
 	}
 
 }
