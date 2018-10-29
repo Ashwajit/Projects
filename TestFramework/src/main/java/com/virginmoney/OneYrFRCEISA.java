@@ -98,11 +98,8 @@ public class OneYrFRCEISA {
 
 	static String title = "1 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 	static String isapdfurl = "https://uk.virginmoney.com/virgin/downloads/isa_key_facts.pdf";
-	// static String printsummaryboxurl =
-	// "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
 	static String tcpdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	// printurl is used for both summarybox and print summary box
 	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
 
 	public void goTo() {

@@ -151,7 +151,8 @@ public class OneYrFixedRateCashEISATest {
 	public void canValidatePrintSummaryBox() throws InterruptedException {
 		Pages.oneyrfrceisa().goTo();
 		Assert.assertTrue(Pages.oneyrfrceisa().validatePrintSummaryBox());
-		System.out.println("Print Summary Box button is clicked and verified");
+		System.out.println("Print Summary Box button is clicked and verify");
+
 	}
 
 	@AfterMethod
