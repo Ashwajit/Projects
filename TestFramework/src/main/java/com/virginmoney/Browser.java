@@ -22,20 +22,20 @@ public class Browser {
 	public static void goTo(String url) throws IOException {
 
 		InputStream ip = new FileInputStream(
-				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\src\\main\\java\\config\\properties");
+				"/Users/ashwajitthukral/git/Projects/TestFramework/src/main/java/config/properties");
 		prop.load(ip);
 		browserName = prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:/Appium/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:/Appium/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/geckodriver");
 			driver = new FirefoxDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("Edge")) {
-			System.setProperty("webdriver.ie.driver", "C:/Appium/MicrosoftWebDriver.exe");
+			System.setProperty("webdriver.ie.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/MicrosoftWebDriver");
 			driver = new InternetExplorerDriver();
 		}
 

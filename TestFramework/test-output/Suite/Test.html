@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/14/20</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 05 00:25:47 BST 2018</td>
+<td>Started on:</td><td>Wed Feb 27 22:00:36 GMT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>154 seconds (154171 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1149 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.virginmoney.SavingsToBuyTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.SavingsToBuyTest</td>
+<td title='com.virginmoney.FasTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.FasTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.qa.util.ScreenshotHandle.takeScreenshot(ScreenshotHandle.java:26)
-	at com.virginmoney.SavingsToBuyTest.cleanUp(SavingsToBuyTest.java:22)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace511354923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace511354923'><pre>java.lang.NullPointerException
-	at com.qa.util.ScreenshotHandle.takeScreenshot(ScreenshotHandle.java:26)
-	at com.virginmoney.SavingsToBuyTest.cleanUp(SavingsToBuyTest.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FasTest.cleanUp(FasTest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace671046933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace671046933'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FasTest.cleanUp(FasTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
@@ -107,15 +107,630 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
 	at org.testng.TestNG.runSuites(TestNG.java:1133)
 	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.virginmoney.SavingsToBuyTest@457e2f02</td></tr>
+<td>com.virginmoney.FasTest@69453e37</td></tr>
+<tr>
+<td title='com.virginmoney.SmokeTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.SmokeTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.SmokeTest.cleanUp(SmokeTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1234250905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1234250905'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.SmokeTest.cleanUp(SmokeTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.SmokeTest@6f4a47c7</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateEBondTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateEBondTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateEBondTest.cleanUp(OneYrFixedRateEBondTest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217875525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217875525'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateEBondTest.cleanUp(OneYrFixedRateEBondTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateEBondTest@ae13544</td></tr>
+<tr>
+<td title='com.virginmoney.DoubleTakeESaverTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.DoubleTakeESaverTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.DoubleTakeESaverTest.cleanUp(DoubleTakeESaverTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace552936351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace552936351'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.DoubleTakeESaverTest.cleanUp(DoubleTakeESaverTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.DoubleTakeESaverTest@7dc0f706</td></tr>
+<tr>
+<td title='com.virginmoney.HelpToBuyTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.HelpToBuyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.HelpToBuyTest.cleanUp(HelpToBuyTest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890545344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace890545344'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.HelpToBuyTest.cleanUp(HelpToBuyTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.HelpToBuyTest@4009e306</td></tr>
+<tr>
+<td title='com.virginmoney.ManUtdDoubleTakeEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.ManUtdDoubleTakeEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.ManUtdDoubleTakeEISATest.cleanUp(ManUtdDoubleTakeEISATest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363509958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363509958'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.ManUtdDoubleTakeEISATest.cleanUp(ManUtdDoubleTakeEISATest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.ManUtdDoubleTakeEISATest@43c1b556</td></tr>
+<tr>
+<td title='com.virginmoney.FiveYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.FiveYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FiveYrFixedRateCashEISATest.cleanUp(FiveYrFixedRateCashEISATest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2125062626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2125062626'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FiveYrFixedRateCashEISATest.cleanUp(FiveYrFixedRateCashEISATest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.FiveYrFixedRateCashEISATest@587e5365</td></tr>
+<tr>
+<td title='com.virginmoney.FiveYrFixedRateEBondTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.FiveYrFixedRateEBondTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FiveYrFixedRateEBondTest.cleanUp(FiveYrFixedRateEBondTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510147134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510147134'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.FiveYrFixedRateEBondTest.cleanUp(FiveYrFixedRateEBondTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.FiveYrFixedRateEBondTest@22fcf7ab</td></tr>
+<tr>
+<td title='com.virginmoney.SavingsToBuyTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.SavingsToBuyTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.SavingsToBuyTest.cleanUp(SavingsToBuyTest.java:19)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1029472813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1029472813'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.SavingsToBuyTest.cleanUp(SavingsToBuyTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.SavingsToBuyTest@2de23121</td></tr>
+<tr>
+<td title='com.virginmoney.DoubleTakeEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.DoubleTakeEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.DoubleTakeEISATest.cleanUp(DoubleTakeEISATest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1249875355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1249875355'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.DoubleTakeEISATest.cleanUp(DoubleTakeEISATest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.DoubleTakeEISATest@4988d8b8</td></tr>
+<tr>
+<td title='com.virginmoney.ManUtdDoubleTakeESaverTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.ManUtdDoubleTakeESaverTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.ManUtdDoubleTakeESaverTest.cleanUp(ManUtdDoubleTakeESaverTest.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454305524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454305524'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.ManUtdDoubleTakeESaverTest.cleanUp(ManUtdDoubleTakeESaverTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.ManUtdDoubleTakeESaverTest@c0c2f8d</td></tr>
+<tr>
+<td title='com.virginmoney.VirginAtlanticTest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.VirginAtlanticTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.VirginAtlanticTest.cleanUp(VirginAtlanticTest.java:19)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2014461570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2014461570'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.VirginAtlanticTest.cleanUp(VirginAtlanticTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.VirginAtlanticTest@305b7c14</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace806511723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace806511723'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2032079962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032079962'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.cleanUp()'><b>cleanUp</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -123,89 +738,1346 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.virginmoney.OneYrFixedRateCashEISATest.canGoTo1YrFRCEISAPage()'><b>canGoTo1YrFRCEISAPage</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.OneYrFixedRateCashEISATest@5c7fa833</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.OneYrFRCEISA.isAt(OneYrFRCEISA.java:114)
+	at com.virginmoney.OneYrFixedRateCashEISATest.canGoTo1YrFRCEISAPage(OneYrFixedRateCashEISATest.java:15)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1183231938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1183231938'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.OneYrFRCEISA.isAt(OneYrFRCEISA.java:114)
+	at com.virginmoney.OneYrFixedRateCashEISATest.canGoTo1YrFRCEISAPage(OneYrFixedRateCashEISATest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
 <tr>
-<td title='com.virginmoney.TwoYrFixedRateCashEISATest2.canGoTo2YrFRCEISAPage()'><b>canGoTo2YrFRCEISAPage</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest2</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.TwoYrFixedRateCashEISATest2@51565ec2</td></tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canGoTo2YrFRCEISAPage()'><b>canGoTo2YrFRCEISAPage</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.TwoYrFRCEISA.isAt(TwoYrFRCEISA.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.canGoTo2YrFRCEISAPage(TwoYrFixedRateCashEISATest.java:14)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646371921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646371921'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.TwoYrFRCEISA.isAt(TwoYrFRCEISA.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.canGoTo2YrFRCEISAPage(TwoYrFixedRateCashEISATest.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
 <tr>
 <td title='com.virginmoney.FiveYrFixedRateCashEISATest.canGoTo5YrFRCEISAPage()'><b>canGoTo5YrFRCEISAPage</b><br>Test class: com.virginmoney.FiveYrFixedRateCashEISATest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.FiveYrFixedRateCashEISATest@7823a2f9</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FiveYrFRCEISA.isAt(FiveYrFRCEISA.java:21)
+	at com.virginmoney.FiveYrFixedRateCashEISATest.canGoTo5YrFRCEISAPage(FiveYrFixedRateCashEISATest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1806431167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1806431167'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FiveYrFRCEISA.isAt(FiveYrFRCEISA.java:21)
+	at com.virginmoney.FiveYrFixedRateCashEISATest.canGoTo5YrFRCEISAPage(FiveYrFixedRateCashEISATest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.FiveYrFixedRateCashEISATest@587e5365</td></tr>
 <tr>
 <td title='com.virginmoney.DoubleTakeEISATest.canGoToDoubleTakeEISAPage()'><b>canGoToDoubleTakeEISAPage</b><br>Test class: com.virginmoney.DoubleTakeEISATest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.DoubleTakeEISATest@39aeed2f</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.DoubleTakeEISA.isAt(DoubleTakeEISA.java:20)
+	at com.virginmoney.DoubleTakeEISATest.canGoToDoubleTakeEISAPage(DoubleTakeEISATest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1297836716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1297836716'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.DoubleTakeEISA.isAt(DoubleTakeEISA.java:20)
+	at com.virginmoney.DoubleTakeEISATest.canGoToDoubleTakeEISAPage(DoubleTakeEISATest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.DoubleTakeEISATest@4988d8b8</td></tr>
 <tr>
 <td title='com.virginmoney.DoubleTakeESaverTest.canGoToDoubleTakeESaverPage()'><b>canGoToDoubleTakeESaverPage</b><br>Test class: com.virginmoney.DoubleTakeESaverTest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.DoubleTakeESaverTest@482f8f11</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.DoubleTakeESaver.isAt(DoubleTakeESaver.java:21)
+	at com.virginmoney.DoubleTakeESaverTest.canGoToDoubleTakeESaverPage(DoubleTakeESaverTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1832532108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1832532108'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.DoubleTakeESaver.isAt(DoubleTakeESaver.java:21)
+	at com.virginmoney.DoubleTakeESaverTest.canGoToDoubleTakeESaverPage(DoubleTakeESaverTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.DoubleTakeESaverTest@7dc0f706</td></tr>
 <tr>
 <td title='com.virginmoney.FasTest.canGoToFasPage()'><b>canGoToFasPage</b><br>Test class: com.virginmoney.FasTest</td>
-<td></td>
-<td>8</td>
-<td>com.virginmoney.FasTest@68be2bc2</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FasPage.isAt(FasPage.java:20)
+	at com.virginmoney.FasTest.canGoToFasPage(FasTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523457748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523457748'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FasPage.isAt(FasPage.java:20)
+	at com.virginmoney.FasTest.canGoToFasPage(FasTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.FasTest@69453e37</td></tr>
 <tr>
 <td title='com.virginmoney.SmokeTest.canGoToFasPage()'><b>canGoToFasPage</b><br>Test class: com.virginmoney.SmokeTest</td>
-<td></td>
-<td>9</td>
-<td>com.virginmoney.SmokeTest@28feb3fa</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FasPage.isAt(FasPage.java:20)
+	at com.virginmoney.SmokeTest.canGoToFasPage(SmokeTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1881901842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881901842'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FasPage.isAt(FasPage.java:20)
+	at com.virginmoney.SmokeTest.canGoToFasPage(SmokeTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.SmokeTest@6f4a47c7</td></tr>
 <tr>
 <td title='com.virginmoney.FiveYrFixedRateEBondTest.canGoToFiveYrFixedRateEBondPage()'><b>canGoToFiveYrFixedRateEBondPage</b><br>Test class: com.virginmoney.FiveYrFixedRateEBondTest</td>
-<td></td>
-<td>10</td>
-<td>com.virginmoney.FiveYrFixedRateEBondTest@4cc0edeb</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FiveYrFixedRateEBond.isAt(FiveYrFixedRateEBond.java:19)
+	at com.virginmoney.FiveYrFixedRateEBondTest.canGoToFiveYrFixedRateEBondPage(FiveYrFixedRateEBondTest.java:13)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292040526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292040526'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.FiveYrFixedRateEBond.isAt(FiveYrFixedRateEBond.java:19)
+	at com.virginmoney.FiveYrFixedRateEBondTest.canGoToFiveYrFixedRateEBondPage(FiveYrFixedRateEBondTest.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.FiveYrFixedRateEBondTest@22fcf7ab</td></tr>
 <tr>
 <td title='com.virginmoney.HelpToBuyTest.canGoToHelpToBuyPage()'><b>canGoToHelpToBuyPage</b><br>Test class: com.virginmoney.HelpToBuyTest</td>
-<td></td>
-<td>9</td>
-<td>com.virginmoney.HelpToBuyTest@1593948d</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.HelpToBuy.isAt(HelpToBuy.java:21)
+	at com.virginmoney.HelpToBuyTest.canGoToHelpToBuyPage(HelpToBuyTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace802243390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace802243390'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.HelpToBuy.isAt(HelpToBuy.java:21)
+	at com.virginmoney.HelpToBuyTest.canGoToHelpToBuyPage(HelpToBuyTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.HelpToBuyTest@4009e306</td></tr>
 <tr>
 <td title='com.virginmoney.ManUtdDoubleTakeEISATest.canGoToManUtdDoubleTakeEISAPage()'><b>canGoToManUtdDoubleTakeEISAPage</b><br>Test class: com.virginmoney.ManUtdDoubleTakeEISATest</td>
-<td></td>
-<td>9</td>
-<td>com.virginmoney.ManUtdDoubleTakeEISATest@1b604f19</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.ManUtdDoubleTakeEISA.isAt(ManUtdDoubleTakeEISA.java:21)
+	at com.virginmoney.ManUtdDoubleTakeEISATest.canGoToManUtdDoubleTakeEISAPage(ManUtdDoubleTakeEISATest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48208774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48208774'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.ManUtdDoubleTakeEISA.isAt(ManUtdDoubleTakeEISA.java:21)
+	at com.virginmoney.ManUtdDoubleTakeEISATest.canGoToManUtdDoubleTakeEISAPage(ManUtdDoubleTakeEISATest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.ManUtdDoubleTakeEISATest@43c1b556</td></tr>
 <tr>
 <td title='com.virginmoney.ManUtdDoubleTakeESaverTest.canGoToManUtdDoubleTakeESaverPage()'><b>canGoToManUtdDoubleTakeESaverPage</b><br>Test class: com.virginmoney.ManUtdDoubleTakeESaverTest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.ManUtdDoubleTakeESaverTest@724af044</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.ManUtdDoubleTakeESaver.isAt(ManUtdDoubleTakeESaver.java:21)
+	at com.virginmoney.ManUtdDoubleTakeESaverTest.canGoToManUtdDoubleTakeESaverPage(ManUtdDoubleTakeESaverTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671507048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671507048'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.ManUtdDoubleTakeESaver.isAt(ManUtdDoubleTakeESaver.java:21)
+	at com.virginmoney.ManUtdDoubleTakeESaverTest.canGoToManUtdDoubleTakeESaverPage(ManUtdDoubleTakeESaverTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.ManUtdDoubleTakeESaverTest@c0c2f8d</td></tr>
 <tr>
 <td title='com.virginmoney.OneYrFixedRateEBondTest.canGoToOneYrFixedRateEBondPage()'><b>canGoToOneYrFixedRateEBondPage</b><br>Test class: com.virginmoney.OneYrFixedRateEBondTest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.OneYrFixedRateEBondTest@675d3402</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.OneYrFixedRateEBond.isAt(OneYrFixedRateEBond.java:20)
+	at com.virginmoney.OneYrFixedRateEBondTest.canGoToOneYrFixedRateEBondPage(OneYrFixedRateEBondTest.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1604002113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604002113'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.OneYrFixedRateEBond.isAt(OneYrFixedRateEBond.java:20)
+	at com.virginmoney.OneYrFixedRateEBondTest.canGoToOneYrFixedRateEBondPage(OneYrFixedRateEBondTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateEBondTest@ae13544</td></tr>
 <tr>
 <td title='com.virginmoney.SavingsToBuyTest.canGoToSavingsToBuyPage()'><b>canGoToSavingsToBuyPage</b><br>Test class: com.virginmoney.SavingsToBuyTest</td>
-<td></td>
-<td>8</td>
-<td>com.virginmoney.SavingsToBuyTest@457e2f02</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.SavingsToBuy.isAt(SavingsToBuy.java:22)
+	at com.virginmoney.SavingsToBuyTest.canGoToSavingsToBuyPage(SavingsToBuyTest.java:14)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1973233403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1973233403'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.title(Browser.java:51)
+	at com.virginmoney.SavingsToBuy.isAt(SavingsToBuy.java:22)
+	at com.virginmoney.SavingsToBuyTest.canGoToSavingsToBuyPage(SavingsToBuyTest.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.virginmoney.SavingsToBuyTest@2de23121</td></tr>
 <tr>
-<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateDoubleTakeEISALink()'><b>canValidateDoubleTakeEISALink</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
-<td></td>
-<td>9</td>
-<td>com.virginmoney.OneYrFixedRateCashEISATest@5c7fa833</td></tr>
+<td title='com.virginmoney.VirginAtlanticTest.canGoToVirginAtlanticPage()'><b>canGoToVirginAtlanticPage</b><br>Test class: com.virginmoney.VirginAtlanticTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\ashwajit\git\Projects\TestFramework\src\main\java\config\properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.virginmoney.Browser.goTo(Browser.java:24)
+	at com.virginmoney.VirginAtlantic.goTo(VirginAtlantic.java:11)
+	at com.virginmoney.VirginAtlanticTest.canGoToVirginAtlanticPage(VirginAtlanticTest.java:13)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473771722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473771722'><pre>java.io.FileNotFoundException: C:\Users\ashwajit\git\Projects\TestFramework\src\main\java\config\properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.virginmoney.Browser.goTo(Browser.java:24)
+	at com.virginmoney.VirginAtlantic.goTo(VirginAtlantic.java:11)
+	at com.virginmoney.VirginAtlanticTest.canGoToVirginAtlanticPage(VirginAtlanticTest.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.VirginAtlanticTest@305b7c14</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateIsaTransferLink()'><b>canValidateIsaTransferLink</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
-<td></td>
-<td>10</td>
-<td>com.virginmoney.OneYrFixedRateCashEISATest@5c7fa833</td></tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canValidateApplyButton()'><b>canValidateApplyButton</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1702143276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702143276'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateApplyButton()'><b>canValidateApplyButton</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace769432223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769432223'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateApplyNow()'><b>canValidateApplyNow</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1095088856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1095088856'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canValidateContent()'><b>canValidateContent</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445918232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445918232'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateContent()'><b>canValidateContent</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1042786867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1042786867'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateFSCSImage()'><b>canValidateFSCSImage</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908043086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908043086'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateFscsPdf()'><b>canValidateFscsPdf</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914507705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914507705'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateHelp_GuideImage()'><b>canValidateHelp_GuideImage</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014486152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014486152'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidatePdf()'><b>canValidatePdf</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20853837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20853837'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canValidatePdf()'><b>canValidatePdf</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538185145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538185145'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidatePrintSummaryBox()'><b>canValidatePrintSummaryBox</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1682681674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1682681674'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateProductName()'><b>canValidateProductName</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651802632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651802632'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canValidateRateCard()'><b>canValidateRateCard</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1665197552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1665197552'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
 <tr>
 <td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateRateCard()'><b>canValidateRateCard</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
-<td></td>
-<td>8</td>
-<td>com.virginmoney.OneYrFixedRateCashEISATest@5c7fa833</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace712974096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace712974096'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateReadSummaryBoxLink()'><b>canValidateReadSummaryBoxLink</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace42544488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42544488'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.TwoYrFixedRateCashEISATest.canValidateShortIntro()'><b>canValidateShortIntro</b><br>Test class: com.virginmoney.TwoYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252277567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252277567'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.TwoYrFixedRateCashEISATest.cleanUp(TwoYrFixedRateCashEISATest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.TwoYrFixedRateCashEISATest@3d34d211</td></tr>
 <tr>
 <td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateShortIntro()'><b>canValidateShortIntro</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
-<td></td>
-<td>7</td>
-<td>com.virginmoney.OneYrFixedRateCashEISATest@5c7fa833</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252480153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252480153'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateSignInAndApply()'><b>canValidateSignInAndApply</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace910599202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace910599202'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateSummaryBoxPdf()'><b>canValidateSummaryBoxPdf</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1101048445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1101048445'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
+<tr>
+<td title='com.virginmoney.OneYrFixedRateCashEISATest.canValidateTCPdf()'><b>canValidateTCPdf</b><br>Test class: com.virginmoney.OneYrFixedRateCashEISATest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477533894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477533894'><pre>java.lang.NullPointerException
+	at com.virginmoney.Browser.close(Browser.java:55)
+	at com.virginmoney.OneYrFixedRateCashEISATest.cleanUp(OneYrFixedRateCashEISATest.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.virginmoney.OneYrFixedRateCashEISATest@63475ace</td></tr>
 </table><p>
 </body>
 </html>

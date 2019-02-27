@@ -10,8 +10,6 @@
       <class name="com.virginmoney.DoubleTakeESaverTest"/>
       <class name="com.virginmoney.HelpToBuyTest"/>
       <class name="com.virginmoney.ManUtdDoubleTakeEISATest"/>
-      <class name="com.virginmoney.FiveYrFixedRateCashEISATest"/>
-      <class name="com.virginmoney.FiveYrFixedRateEBondTest"/>
       <class name="com.virginmoney.SavingsToBuyTest"/>
       <class name="com.virginmoney.OneYrFixedRateCashEISATest"/>
       <class name="com.virginmoney.DoubleTakeEISATest"/>

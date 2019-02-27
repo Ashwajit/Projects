@@ -100,7 +100,7 @@ public class OneYrFRCEISA {
 	static String isapdfurl = "https://uk.virginmoney.com/virgin/downloads/isa_key_facts.pdf";
 	static String tcpdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_353/print";
+	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_371/print";
 
 	public void goTo() {
 		try {
@@ -181,10 +181,10 @@ public class OneYrFRCEISA {
 		// .withName("oneyrFixedRateCashEISAImage").save();
 		// Thread.sleep(3000);
 
-		File file = new File(
-				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\oneyrFixedRateCashEISAImage.png");
+		File file = new File("/Users/ashwajitthukral/git/Projects/TestFramework/screenshots/oneyrFixedRateCashEISAImage.png");
 		BufferedImage oneyrFixedRateCashEISAImage = ImageIO.read(file);
 		Thread.sleep(1000);
+	
 		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
 				.equals(oneyrFixedRateCashEISAImage, 0.1);
 

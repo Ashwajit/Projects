@@ -36,7 +36,7 @@ public class TwoYrFRCEISA {
 	}
 
 	// static String url =
-	// "https://uk.virginmoney.com/savings/products/2_year_fixed_rate_cash_e_isa_issue_348/";
+	// "https://uk.virginmoney.com/savings/products/2_year_fixed_rate_cash_e_isa_issue_372/";
 	static String title = "2 Year Fixed Rate Cash E-ISA | ISAs | Savings | Virgin Money UK";
 	static String s = "isa_key_facts.pdf";
 	static String shortIntroStrapline = "Watch your money grow tax-free";
@@ -96,15 +96,16 @@ public class TwoYrFRCEISA {
 
 	public boolean validateContent() throws IOException, InterruptedException {
 
-		// Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
-		// true)
-		// .withName("twoyrFixedRateCashEISAImage").save();
+		 //Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
+		 //true)
+		 //.withName("twoyrFixedRateCashEISAImage").save();
 		// Thread.sleep(3000);
 
 		File file = new File(
-				"C:\\Users\\ashwajit\\git\\Projects\\TestFramework\\screenshots\\twoyrFixedRateCashEISAImage.png");
+				"/Users/ashwajitthukral/git/Projects/TestFramework/screenshots/twoyrFixedRateCashEISAImage.png");
 		BufferedImage twoyrFixedRateCashEISAImage = ImageIO.read(file);
 		Thread.sleep(1000);
+		
 		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
 				.equals(twoyrFixedRateCashEISAImage, 0.1);
 
