@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.virginmoney.HelpToBuyTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoToHelpToBuyPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.HelpToBuyTest -->
-      <class name="com.virginmoney.FiveYrFixedRateEBondTest">
-        <methods>
-          <include name="canGoToFiveYrFixedRateEBondPage"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- com.virginmoney.FiveYrFixedRateEBondTest -->
-      <class name="com.virginmoney.SmokeTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoToFasPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.SmokeTest -->
-      <class name="com.virginmoney.OneYrFixedRateEBondTest">
-        <methods>
-          <include name="canGoToOneYrFixedRateEBondPage"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- com.virginmoney.OneYrFixedRateEBondTest -->
-      <class name="com.virginmoney.FiveYrFixedRateCashEISATest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoTo5YrFRCEISAPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.FiveYrFixedRateCashEISATest -->
       <class name="com.virginmoney.SavingsToBuyTest">
         <methods>
           <include name="canGoToSavingsToBuyPage"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- com.virginmoney.SavingsToBuyTest -->
+      <class name="com.virginmoney.OneYrFixedRateEBondTest">
+        <methods>
+          <include name="canGoToOneYrFixedRateEBondPage"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.OneYrFixedRateEBondTest -->
       <class name="com.virginmoney.FasTest">
         <methods>
           <include name="cleanUp"/>
           <include name="canGoToFasPage"/>
         </methods>
       </class> <!-- com.virginmoney.FasTest -->
+      <class name="com.virginmoney.ManUtdDoubleTakeESaverTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToManUtdDoubleTakeESaverPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.ManUtdDoubleTakeESaverTest -->
+      <class name="com.virginmoney.SmokeTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToFasPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.SmokeTest -->
+      <class name="com.virginmoney.ManUtdDoubleTakeEISATest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToManUtdDoubleTakeEISAPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.ManUtdDoubleTakeEISATest -->
+      <class name="com.virginmoney.HelpToBuyTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToHelpToBuyPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.HelpToBuyTest -->
+      <class name="com.virginmoney.TwoYrFixedRateCashEISATest">
+        <methods>
+          <include name="canValidatePdf"/>
+          <include name="cleanUp"/>
+          <include name="canGoTo2YrFRCEISAPage"/>
+          <include name="canValidateApplyButton"/>
+          <include name="canValidateRateCard"/>
+          <include name="canValidateShortIntro"/>
+          <include name="canValidateContent"/>
+        </methods>
+      </class> <!-- com.virginmoney.TwoYrFixedRateCashEISATest -->
+      <class name="com.virginmoney.DoubleTakeEISATest">
+        <methods>
+          <include name="canGoToDoubleTakeEISAPage"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.virginmoney.DoubleTakeEISATest -->
+      <class name="com.virginmoney.VirginAtlanticTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="canGoToVirginAtlanticPage"/>
+        </methods>
+      </class> <!-- com.virginmoney.VirginAtlanticTest -->
       <class name="com.virginmoney.OneYrFixedRateCashEISATest">
         <methods>
           <include name="canValidatePrintSummaryBox"/>
@@ -66,47 +89,12 @@
           <include name="canValidateApplyNow"/>
         </methods>
       </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
-      <class name="com.virginmoney.TwoYrFixedRateCashEISATest">
-        <methods>
-          <include name="canValidatePdf"/>
-          <include name="cleanUp"/>
-          <include name="canGoTo2YrFRCEISAPage"/>
-          <include name="canValidateApplyButton"/>
-          <include name="canValidateRateCard"/>
-          <include name="canValidateShortIntro"/>
-          <include name="canValidateContent"/>
-        </methods>
-      </class> <!-- com.virginmoney.TwoYrFixedRateCashEISATest -->
       <class name="com.virginmoney.DoubleTakeESaverTest">
         <methods>
           <include name="canGoToDoubleTakeESaverPage"/>
           <include name="cleanUp"/>
         </methods>
       </class> <!-- com.virginmoney.DoubleTakeESaverTest -->
-      <class name="com.virginmoney.VirginAtlanticTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoToVirginAtlanticPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.VirginAtlanticTest -->
-      <class name="com.virginmoney.ManUtdDoubleTakeEISATest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoToManUtdDoubleTakeEISAPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.ManUtdDoubleTakeEISATest -->
-      <class name="com.virginmoney.ManUtdDoubleTakeESaverTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="canGoToManUtdDoubleTakeESaverPage"/>
-        </methods>
-      </class> <!-- com.virginmoney.ManUtdDoubleTakeESaverTest -->
-      <class name="com.virginmoney.DoubleTakeEISATest">
-        <methods>
-          <include name="canGoToDoubleTakeEISAPage"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- com.virginmoney.DoubleTakeEISATest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

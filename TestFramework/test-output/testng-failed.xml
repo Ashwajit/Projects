@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="com.virginmoney.OneYrFixedRateCashEISATest">
         <methods>
-          <include name="canValidateTCPdf"/>
-          <include name="cleanUp"/>
+          <include name="canValidatePrintSummaryBox"/>
+          <include name="canValidateFSCSImage"/>
           <include name="canValidatePdf"/>
+          <include name="canValidateHelp_GuideImage"/>
+          <include name="canValidateReadSummaryBoxLink"/>
+          <include name="canValidateSignInAndApply"/>
+          <include name="canValidateSummaryBoxPdf"/>
+          <include name="canValidateTCPdf"/>
+          <include name="canValidateShortIntro"/>
+          <include name="canValidateApplyButton"/>
+          <include name="canValidateFscsPdf"/>
+          <include name="canValidateProductName"/>
+          <include name="canValidateRateCard"/>
+          <include name="canGoTo1YrFRCEISAPage"/>
+          <include name="canValidateContent"/>
+          <include name="cleanUp"/>
+          <include name="canValidateApplyNow"/>
         </methods>
       </class> <!-- com.virginmoney.OneYrFixedRateCashEISATest -->
     </classes>

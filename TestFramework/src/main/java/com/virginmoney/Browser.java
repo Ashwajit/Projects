@@ -22,20 +22,20 @@ public class Browser {
 	public static void goTo(String url) throws IOException {
 
 		InputStream ip = new FileInputStream(
-				"/Users/ashwajitthukral/git/Projects/TestFramework/src/main/java/config/properties");
+				"C:\\Users\\ashwa\\git\\Projects\\TestFramework\\src\\main\\java\\config\\properties");
 		prop.load(ip);
 		browserName = prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/chromedriver");
-			driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ashwa\\Downloads\\D Drive\\Ashwajit Thukral\\Testing Tools\\Jars\\chromedriver.exe");
+		driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\ashwa\\Downloads\\D Drive\\Ashwajit Thukral\\Testing Tools\\Jars\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("Edge")) {
-			System.setProperty("webdriver.ie.driver", "/Users/ashwajitthukral/Documents/AshwajitThukral/Tools/webdriver/MicrosoftWebDriver");
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\ashwa\\Downloads\\D Drive\\Ashwajit Thukral\\Testing Tools\\Jars\\MicrosoftWebDriver.exe");
 			driver = new InternetExplorerDriver();
 		}
 
