@@ -26,7 +26,7 @@ public class OneYrFRCEISA {
 
 	// Object Repository ---OR
 
-	@FindBy(xpath = "//span[contains(text(),'1.51%')]")
+	@FindBy(xpath = "//span[contains(text(),'1.40%')]")
 	WebElement interestRateOnCard;
 
 	@FindBy(xpath = "//p[contains(text(),'Watch your money grow tax-free')]")
@@ -100,7 +100,7 @@ public class OneYrFRCEISA {
 	static String isapdfurl = "https://uk.virginmoney.com/virgin/downloads/isa_key_facts.pdf";
 	static String tcpdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_371/print";
+	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_378/print";
 
 	public void goTo() {
 		try {
@@ -132,7 +132,7 @@ public class OneYrFRCEISA {
 
 		String shh = interestRateOnCard.getText();
 		System.out.println(shh);
-		return interestRateOnCard.getText().contains("1.51%");
+		return interestRateOnCard.getText().contains("1.40%");
 
 	}
 
@@ -169,24 +169,21 @@ public class OneYrFRCEISA {
 		document = PDDocument.load(fileParse);
 		String pdfContent = new PDFTextStripper().getText(document);
 		// System.out.println(pdfContent);
-		Assert.assertTrue(pdfContent.contains("VM19765V12"));
+		Assert.assertTrue(pdfContent.contains("VM19765V13"));
 		return true;
 
 	}
 
 	public boolean validateContent() throws IOException, InterruptedException {
 
-		// Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
-		// true)
-		// .withName("oneyrFixedRateCashEISAImage").save();
-		// Thread.sleep(3000);
+	  //  Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("oneyrFixedRateCashEISAImage").save();
+	    //Thread.sleep(3000);
 
-		File file = new File("/Users/ashwajitthukral/git/Projects/TestFramework/screenshots/oneyrFixedRateCashEISAImage.png");
+		File file = new File("C:/Users/ashwa/git/Projects/TestFramework/screenshots/oneyrFixedRateCashEISAImage.png");
 		BufferedImage oneyrFixedRateCashEISAImage = ImageIO.read(file);
 		Thread.sleep(1000);
 	
-		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
-				.equals(oneyrFixedRateCashEISAImage, 0.1);
+		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual").equals(oneyrFixedRateCashEISAImage, 0.1);
 
 	}
 
@@ -211,7 +208,7 @@ public class OneYrFRCEISA {
 		document = PDDocument.load(fileParse);
 		String pdfContent = new PDFTextStripper().getText(document);
 		// System.out.println(pdfContent);
-		Assert.assertTrue(pdfContent.contains("VMP69V13"));
+		Assert.assertTrue(pdfContent.contains("VMP69V14"));
 		return true;
 	}
 
@@ -236,7 +233,7 @@ public class OneYrFRCEISA {
 		document = PDDocument.load(fileParse);
 		String pdfContent = new PDFTextStripper().getText(document);
 		// System.out.println(pdfContent);
-		Assert.assertTrue(pdfContent.contains("VM8456V7"));
+		Assert.assertTrue(pdfContent.contains("VM19180V4"));
 		return true;
 
 	}

@@ -19,7 +19,7 @@ public class TwoYrFRCEISA {
 
 	// OR
 
-	@FindBy(xpath = "//span[contains(text(),'1.61%')]")
+	@FindBy(xpath = "//span[contains(text(),'1.66%')]")
 	WebElement interestRateOnCard;
 
 	@FindBy(xpath = "//p[contains(text(),'Watch your money grow tax-free')]")
@@ -59,7 +59,7 @@ public class TwoYrFRCEISA {
 
 		String shh = interestRateOnCard.getText();
 		System.out.println(shh);
-		return interestRateOnCard.getText().contains("1.61%");
+		return interestRateOnCard.getText().contains("1.66%");
 
 	}
 
@@ -96,18 +96,16 @@ public class TwoYrFRCEISA {
 
 	public boolean validateContent() throws IOException, InterruptedException {
 
-		 //Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500,
-		 //true)
-		 //.withName("twoyrFixedRateCashEISAImage").save();
-		// Thread.sleep(3000);
+		 //Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("twoyrFixedRateCashEISAImage").save();
+		//Thread.sleep(3000);
 
-		File file = new File(
-				"/Users/ashwajitthukral/git/Projects/TestFramework/screenshots/twoyrFixedRateCashEISAImage.png");
+		File file = new File("C:/Users/ashwa/git/Projects/TestFramework/screenshots/twoyrFixedRateCashEISAImage.png");
 		BufferedImage twoyrFixedRateCashEISAImage = ImageIO.read(file);
 		Thread.sleep(1000);
 		
 		return Shutterbug.shootPage(Browser.driver, ScrollStrategy.BOTH_DIRECTIONS, 500, true).withName("Actual")
 				.equals(twoyrFixedRateCashEISAImage, 0.1);
+
 
 	}
 
