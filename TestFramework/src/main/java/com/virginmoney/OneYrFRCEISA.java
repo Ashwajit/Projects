@@ -100,7 +100,7 @@ public class OneYrFRCEISA {
 	static String isapdfurl = "https://uk.virginmoney.com/virgin/downloads/isa_key_facts.pdf";
 	static String tcpdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/terms_conditions.pdf";
 	static String fscspdfurl = "https://uk.virginmoney.com/virgin/assets/pdf/fscs-guide.pdf";
-	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_378/print";
+	static String summaryboxurl = "https://uk.virginmoney.com/savings/products/1_year_fixed_rate_cash_e_isa_issue_390/print";
 
 	public void goTo() {
 		try {
